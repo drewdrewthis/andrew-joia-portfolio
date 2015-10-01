@@ -1,0 +1,7 @@
+/* Color Scheme Variables */
+* {
+  border: 1px solid green;
+}
+html {
+  background: lightgrey;
+}
