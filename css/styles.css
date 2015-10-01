@@ -5,3 +5,11 @@
 html {
   background: lightgrey;
 }
+.top-navigation {
+  background: white;
+  border-bottom: 10px solid #CB4925;
+}
+.intro-section {
+  background: url('images/drew-silhouette.png') no-repeat bottom middle;
+  background-size: contain;
+}
