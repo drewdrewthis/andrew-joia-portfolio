@@ -32,6 +32,7 @@ html {
   position: relative;
 }
 .intro-section .lead-in {
+  border-top: 1px dashed;
   text-align: right;
   position: absolute;
   top: 0;
@@ -41,12 +42,26 @@ html {
 }
 .intro-section .lead-in h1 {
   font-family: 'Oswald', sans-serif;
+  color: #9EBAB2;
 }
 .intro-section .lead-in h3 {
   font-family: 'Quattrocento', serif;
+  color: #CB4925;
+}
+.main-section {
+  background: url('../images/city-bg.jpg') no-repeat;
+  background-size: cover;
+}
+.portfolio-section {
+  background: rgba(46, 61, 57, 0.9);
+}
+.info-section {
+  background: rgba(115, 80, 70, 0.9);
 }
 .title {
   text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #CB4925;
 }
 .rotate90 {
   transform: rotate(90deg);
