@@ -42,12 +42,15 @@ html {
 }
 
 .intro-section {
-	background: url('../images/drew-silhouette.png') no-repeat bottom left;
-	background-size: contain;
 	
 	.container {
 		height: 45rem;
 		position: relative;
+		background: url('../images/drew-silhouette.png') no-repeat -27px bottom;
+		background-size: contain;
+		//This makes the container a bit wider so my dread sticks out past the left
+		width: 1225px;
+   	 	max-width: 100%;
 	}
 
 	.lead-in {
@@ -81,15 +84,11 @@ html {
 	.portfolio {
 		width: 100%;
 		padding: 3rem;
-		display: flex;
 		margin: auto;
 	}
 
 	.port-item {
-		flex-grow: 1;
-		height: 15rem;
-		background: white;
-		margin: 0 3rem;
+		padding: 3rem;
 	}
 }
 

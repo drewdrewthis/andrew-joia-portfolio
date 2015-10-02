@@ -26,13 +26,13 @@ html {
   list-style: none;
   display: inline-block;
 }
-.intro-section {
-  background: url('../images/drew-silhouette.png') no-repeat bottom left;
-  background-size: contain;
-}
 .intro-section .container {
   height: 45rem;
   position: relative;
+  background: url('../images/drew-silhouette.png') no-repeat -27px bottom;
+  background-size: contain;
+  width: 1225px;
+  max-width: 100%;
 }
 .intro-section .lead-in {
   border-top: 1px dashed;
@@ -62,14 +62,10 @@ html {
 .portfolio-section .portfolio {
   width: 100%;
   padding: 3rem;
-  display: flex;
   margin: auto;
 }
 .portfolio-section .port-item {
-  flex-grow: 1;
-  height: 15rem;
-  background: white;
-  margin: 0 3rem;
+  padding: 3rem;
 }
 .info-section {
   background: rgba(115, 80, 70, 0.8);
