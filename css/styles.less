@@ -10,7 +10,8 @@
 
 
 * {
-	border: 1px solid green;
+	//border: 1px solid green;
+	transition: all 0.5s ease;
 }
 
 html {
@@ -31,6 +32,10 @@ html {
 		color: @my-brown;
 	}
 
+	li {
+		padding-top: 1em;
+	}
+
 	.container ul {
 		margin-bottom: -0.6rem;
 	}
@@ -44,7 +49,7 @@ html {
 .intro-section {
 	
 	.container {
-		height: 45rem;
+		height: 46rem;
 		position: relative;
 		background: url('../images/drew-silhouette.png') no-repeat -27px bottom;
 		background-size: contain;
@@ -54,6 +59,15 @@ html {
 	}
 
 	.lead-in {
+		border-top: 1px dashed;
+		text-align: right;
+		position: absolute;
+		top: 0;
+		right: -7rem;
+		width: 46rem;
+		margin-top: calc(33rem / 2);
+		padding: .5em;
+
 		h1 {
 			font-family: @my-fontfamily-1;
 			color: @my-midgreen;
@@ -62,19 +76,15 @@ html {
 			font-family: @my-fontfamily-2;
 			color: @my-redorange;
 		}
-		border-top: 1px dashed;
-		text-align: right;
-		position: absolute;
-		top: 0;
-		right: -7rem;
-		width: 45rem;
-		margin-top: calc(33rem / 2);
 	}
 }
 
 .main-section {
-	background: url('../images/city-bg.jpg') no-repeat;
+	background: url('../images/city-bg.jpg') no-repeat center center;
 	background-size: cover;
+	border-top: 10px solid @my-redorange;
+	border-bottom: 10px solid @my-redorange;
+	padding: 0px;
 }
 
 .portfolio-section {
@@ -89,6 +99,29 @@ html {
 
 	.port-item {
 		padding: 3rem;
+		position: relative;
+
+		figcaption {
+			background: rgba(0, 0, 0, 0.8);
+			height: 0rem;
+			padding: 0;
+			text-align: center;
+			position: relative;
+			bottom: 0;
+			font-size: 0px;
+			color: @my-lightgreen;
+			font-family: @my-fontfamily-1;
+			border-top: .5em solid @my-redorange;
+			overflow: hidden;
+
+		}
+
+		&:hover figcaption {
+				height: 10rem;
+				margin-top: -10rem;
+				padding: 2rem;
+				font-size: 2rem;
+			}
 	}
 }
 
@@ -125,6 +158,12 @@ html {
 	text-align: center;
 	font-family: @my-fontfamily-1;
 	color: @my-redorange;
+}
+
+.info-section {
+	text-align: center;
+	font-family: @my-fontfamily-2;
+	color: @my-lightgreen;
 }
 
 
