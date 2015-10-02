@@ -24,7 +24,7 @@ html {
   display: inline-block;
 }
 .intro-section {
-  background: url('images/drew-silhouette.png') no-repeat bottom middle;
+  background: url('../images/drew-silhouette.png') no-repeat bottom left;
   background-size: contain;
 }
 .intro-section .container {
@@ -32,6 +32,7 @@ html {
   position: relative;
 }
 .intro-section .lead-in {
+  text-align: right;
   position: absolute;
   top: 0;
   right: -7rem;
