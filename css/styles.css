@@ -97,7 +97,7 @@ html {
 .info-section .social-links {
   width: 100%;
   max-width: 50rem;
-  margin: -4rem auto auto;
+  margin: -3rem auto auto;
   text-align: center;
   padding: 0;
 }
@@ -184,4 +184,15 @@ html {
     /* Internet Explorer */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   }
+}
+#triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #CB4925;
+  border-bottom: 50px solid transparent;
+  position: fixed;
+  right: 200px;
+  top: 56px;
+  transform: scale(0.2);
 }
