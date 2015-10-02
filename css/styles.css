@@ -117,8 +117,10 @@ html {
 .info-section .social-links li {
   padding: 0 .5em;
 }
-.info-section .info {
+.info-section .main-content {
   padding: 20em 0;
+}
+.info-section .info {
   color: #F1FFFB;
 }
 .info-section button {
