@@ -10,12 +10,13 @@ html {
   border-bottom: 10px solid #CB4925;
 }
 .top-navigation a {
-  color: #735046;
+  color: #CB4925;
   font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
 }
 .top-navigation a:hover,
 .top-navigation a .active {
-  color: #CB4925;
+  color: #735046;
 }
 .top-navigation li,
 .social-links li {
@@ -25,4 +26,37 @@ html {
 .intro-section {
   background: url('images/drew-silhouette.png') no-repeat bottom middle;
   background-size: contain;
+}
+.intro-section .container {
+  height: 45rem;
+  position: relative;
+}
+.intro-section .lead-in {
+  position: absolute;
+  top: 0;
+  right: -7rem;
+  width: 45rem;
+  margin-top: calc(16.5rem);
+}
+.intro-section .lead-in h1 {
+  font-family: 'Oswald', sans-serif;
+}
+.intro-section .lead-in h3 {
+  font-family: 'Quattrocento', serif;
+}
+.title {
+  text-align: center;
+}
+.rotate90 {
+  transform: rotate(90deg);
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+  /* IE */
+  -ms-transform: rotate(90deg);
+  /* Opera */
+  -o-transform: rotate(90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }

@@ -22,12 +22,13 @@ html {
 	border-bottom: 10px solid @my-redorange;
 
 	a {
-		color: @my-brown;
+		color: @my-redorange;
 		font-family: @my-fontfamily-1;
+		font-size: 2rem;
 	}
 
 	a:hover, a .active {
-		color: @my-redorange;
+		color: @my-brown;
 	}
 }
 
@@ -39,5 +40,49 @@ html {
 .intro-section {
 	background: url('images/drew-silhouette.png') no-repeat bottom middle;
 	background-size: contain;
+	
+	.container {
+		height: 45rem;
+		position: relative;
+	}
+
+	.lead-in {
+		h1 {
+			font-family: @my-fontfamily-1;
+		}
+		h3 {
+			font-family: @my-fontfamily-2;
+		}
+		position: absolute;
+		top: 0;
+		right: -7rem;
+		width: 45rem;
+		margin-top: calc(33rem / 2);
+	}
 }
 
+.title {
+	text-align: center;
+}
+
+
+.rotate90 {
+
+transform: rotate(90deg);
+
+/* Safari */
+-webkit-transform: rotate(90deg);
+
+/* Firefox */
+-moz-transform: rotate(90deg);
+
+/* IE */
+-ms-transform: rotate(90deg);
+
+/* Opera */
+-o-transform: rotate(90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
