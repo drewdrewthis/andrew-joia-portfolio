@@ -1,5 +1,6 @@
 /* Color Scheme Variables */
 * {
+  border: 1px solid green;
   transition: all 0.5s ease;
 }
 html {
@@ -113,7 +114,7 @@ html {
   height: 6rem;
   width: 6rem;
   background: #CB4925;
-  padding: 1.4rem 0 0 0.1rem;
+  padding: 1.4rem 0 0 0;
 }
 .info-section .social-links .fa:hover {
   background: #9EBAB2;
