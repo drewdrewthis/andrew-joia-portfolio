@@ -1,0 +1,206 @@
+html {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* Typography Declarations */
+  
+  color: #9E4444;
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  color: orange;
+}
+
+p strong {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+.masthead {
+  background: #EAEAEA url('http://www.drewdrewthis.com/playground/drew-bg.jpg') no-repeat center center;
+  padding: 10em calc((100% - 38em) / 2);
+  border-top: 1em solid orange;
+}
+
+.masthead-circle {
+  background: rgba(0, 0, 0, .8);
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  border: 5px solid orange;
+  padding: 0.5em;
+}
+
+.masthead-circle:hover {
+  -webkit-box-shadow: 0px 0px 1.5em 0px white;
+  -moz-box-shadow: 0px 0px 1.5em 0px white;
+  box-shadow: 0px 0px 1.5em 0px orange;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background: black;
+}
+
+.masthead-intro,
+.masthead-heading {
+  text-align: center;
+}
+
+.masthead-intro {
+  margin-bottom: -1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.masthead-heading {
+  color: orange;
+  font-family: 'Lobster', cursive;
+}
+/*  Mentor Question: Why don't we just use the section tag?
+section {
+  width: 100%;
+  max-width: 700px;
+  margin: 3em auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+*/
+
+.introduction-section,
+.location-section,
+.questions-section {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding: 0 20px;
+}
+
+.introduction-section > p,
+.location-section > p,
+.questions-section > p {
+  /* Typography Declarations */
+  
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+.introduction-section > h1,
+.location-section > h1,
+.questions-section > h1 {
+  /* Typography Declarations */
+  
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+.questions-section > h2 {
+  /* Typography Declarations */
+  
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.fa {
+  font-size: 2em;
+  color: white;
+}
+/*  Mentor Question:Why not just use footer? */
+
+.content-footer {
+  background: #AC1313;
+  padding: 2em 4em;
+  text-align: center;
+}
+
+.content-footer h1 {
+  font-family: 'Lobster', cursive;
+}
+
+.content-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social > li {
+  display: inline-block;
+  padding: 1em;
+}
+
+.content-footer > p,
+.content-footer a {
+  color: white;
+}
+/* Fun Stuff */
+
+* {
+  transition: All 1s ease;
+  -webkit-transition: All 1s ease;
+  -moz-transition: All 1s ease;
+  -o-transition: All 1s ease;
+}
+
+.space-invader {
+  z-index: -1;
+  position: fixed;
+  left: calc((100% - 54em) / 2);
+  top: 23em;
+  transform: scale(.2);
+  box-shadow: 0 0 0 1em orange, 0 1em 0 1em orange, -2.5em 1.5em 0 .5em orange, 2.5em 1.5em 0 .5em orange, -3em -3em 0 0 orange, 3em -3em 0 0 orange, -2em -2em 0 0 orange, 2em -2em 0 0 orange, -3em -1em 0 0 orange, -2em -1em 0 0 orange, 2em -1em 0 0 orange, 3em -1em 0 0 orange, -4em 0 0 0 orange, -3em 0 0 0 orange, 3em 0 0 0 orange, 4em 0 0 0 orange, -5em 1em 0 0 orange, -4em 1em 0 0 orange, 4em 1em 0 0 orange, 5em 1em 0 0 orange, -5em 2em 0 0 orange, 5em 2em 0 0 orange, -5em 3em 0 0 orange, -3em 3em 0 0 orange, 3em 3em 0 0 orange, 5em 3em 0 0 orange, -2em 4em 0 0 orange, -1em 4em 0 0 orange, 1em 4em 0 0 orange, 2em 4em 0 0 orange;
+  background: orange;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+/*  Mentor Question: why doesn't this work?  */
+
+.space-invader:hover {
+  transform: scale(.5);
+}
+
+@media only screen and (max-width: 62em) {
+  h1 {
+    font-size: 2em;
+  }
+  .masthead {
+    padding: 28em 4em 4em;
+    border-top: 1em solid orange;
+  }
+  .masthead-circle {
+    background: rgba(0, 0, 0, .8);
+    width: 7em;
+    height: 7em;
+    box-sizing: border-box;
+    font-size: 2em;
+  }
+  .introduction-section,
+  .location-section,
+  .questions-section {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 3em;
+    font-size: 1.5em;
+  }
+  .space-invader {
+    display: none;
+  }
+}
