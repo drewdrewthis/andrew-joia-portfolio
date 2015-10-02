@@ -1,10 +1,10 @@
 /* Color Scheme Variables */
 * {
-  border: 1px solid green;
   transition: all 0.5s ease;
 }
 html {
   background: lightgrey;
+  -webkit-font-smoothing: antialiased;
 }
 .top-navigation {
   background: white;
@@ -20,10 +20,21 @@ html {
   color: #735046;
 }
 .top-navigation li {
-  padding-top: 1em;
+  padding-top: 4rem;
 }
 .top-navigation .container ul {
-  margin-bottom: -0.4rem;
+  margin-bottom: -0.3rem;
+}
+@media only screen and (min-width: 970px) {
+  .top-navigation {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+  }
+  .intro-section .container {
+    margin-top: 6rem;
+  }
 }
 .top-navigation li,
 .social-links li {
@@ -120,6 +131,9 @@ html {
   background: #9EBAB2;
   border-color: #CB4925;
   color: #CB4925;
+}
+.info-section .social-links li {
+  padding: 0 .5em;
 }
 .info-section .info {
   padding: 20em 0;

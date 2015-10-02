@@ -10,12 +10,13 @@
 
 
 * {
-	border: 1px solid green;
+	//border: 1px solid green;
 	transition: all 0.5s ease;
 }
 
 html {
 	background: lightgrey;
+	-webkit-font-smoothing: antialiased;
 }
 
 .top-navigation {
@@ -33,12 +34,27 @@ html {
 	}
 
 	li {
-		padding-top: 1em;
+		padding-top: 4rem;
 	}
 
 	.container ul {
-		margin-bottom: -0.4rem;
+		margin-bottom: -0.3rem;
 	}
+}
+
+@media only screen and (min-width: 970px) {
+	.top-navigation {
+		position: fixed;
+		top: 0;
+		z-index: 999;
+		width: 100%;
+
+		
+	}
+
+	.intro-section .container {
+			margin-top: 6rem;
+		}
 }
 
 .top-navigation li, .social-links li {
@@ -151,6 +167,10 @@ html {
 			background: @my-midgreen;
 			border-color: @my-redorange;
 			color: @my-redorange;
+		}
+
+		li {
+			padding: 0 .5em;
 		}
 	}
 
