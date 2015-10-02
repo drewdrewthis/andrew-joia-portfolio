@@ -25,35 +25,6 @@ html {
 .top-navigation .container ul {
   margin-bottom: -0.3rem;
 }
-@media only screen and (min-width: 970px) {
-  .top-navigation {
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-  }
-  .intro-section .container {
-    margin-top: 6rem;
-  }
-  .intro-section .lead-in {
-    position: absolute;
-    top: 0;
-    right: -7rem;
-    width: 46rem;
-    margin-top: calc(16.5rem);
-    transform: rotate(90deg);
-    /* Safari */
-    -webkit-transform: rotate(90deg);
-    /* Firefox */
-    -moz-transform: rotate(90deg);
-    /* IE */
-    -ms-transform: rotate(90deg);
-    /* Opera */
-    -o-transform: rotate(90deg);
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  }
-}
 .top-navigation li,
 .social-links li {
   list-style: none;
@@ -182,4 +153,33 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+@media only screen and (min-width: 970px) {
+  .top-navigation {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+  }
+  .intro-section .container {
+    margin-top: 6rem;
+  }
+  .intro-section .lead-in {
+    position: absolute;
+    top: 0;
+    right: -7rem;
+    width: 46rem;
+    margin-top: calc(16.5rem);
+    transform: rotate(90deg);
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+    /* IE */
+    -ms-transform: rotate(90deg);
+    /* Opera */
+    -o-transform: rotate(90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
 }
