@@ -15,8 +15,11 @@ html {
   font-size: 2rem;
 }
 .top-navigation a:hover,
-.top-navigation a .active {
+.top-navigation .active {
   color: #735046;
+}
+.top-navigation .container ul {
+  margin-bottom: -0.6rem;
 }
 .top-navigation li,
 .social-links li {
@@ -53,10 +56,45 @@ html {
   background-size: cover;
 }
 .portfolio-section {
-  background: rgba(46, 61, 57, 0.9);
+  background: rgba(46, 61, 57, 0.8);
+  padding-bottom: 4rem;
+}
+.portfolio-section .portfolio {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  margin: auto;
+}
+.portfolio-section .port-item {
+  flex-grow: 1;
+  height: 15rem;
+  background: white;
+  margin: 0 3rem;
 }
 .info-section {
-  background: rgba(115, 80, 70, 0.9);
+  background: rgba(115, 80, 70, 0.8);
+}
+.info-section .social-links {
+  width: 100%;
+  max-width: 50rem;
+  margin: -4rem auto auto;
+  text-align: center;
+  padding: 0;
+}
+.info-section .social-links .fa {
+  color: #F1FFFB;
+  font-size: 3rem;
+  border-color: #F1FFFB;
+  border-radius: 100%;
+  height: 6rem;
+  width: 6rem;
+  background: #CB4925;
+  padding: 1.4rem 0 0 0.1rem;
+}
+.info-section .social-links .fa:hover {
+  background: #9EBAB2;
+  border-color: #CB4925;
+  color: #CB4925;
 }
 .title {
   text-align: center;
