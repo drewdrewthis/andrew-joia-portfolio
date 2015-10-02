@@ -37,7 +37,7 @@ html {
 	}
 
 	.container ul {
-		margin-bottom: -0.6rem;
+		margin-bottom: -0.4rem;
 	}
 }
 
@@ -59,7 +59,7 @@ html {
 	}
 
 	.lead-in {
-		border-top: 1px dashed;
+		border-top: 1px dashed @my-midgreen;
 		text-align: right;
 		position: absolute;
 		top: 0;
@@ -80,11 +80,12 @@ html {
 }
 
 .main-section {
-	background: url('../images/city-bg.jpg') no-repeat center center;
+	background: url('../images/city-bg.jpg') no-repeat fixed center;
 	background-size: cover;
 	border-top: 10px solid @my-redorange;
 	border-bottom: 10px solid @my-redorange;
 	padding: 0px;
+	position: relative;
 }
 
 .portfolio-section {
@@ -152,6 +153,21 @@ html {
 			color: @my-redorange;
 		}
 	}
+
+	.info {
+		padding: 20em 0;
+		color: @my-lightgreen;
+	}
+
+	button {
+		background-color: transparent;
+		padding: 2rem 9rem 1rem 1rem;
+		border: 1px solid @my-lightgreen;
+		color: @my-lightgreen;
+		font-family: @my-fontfamily-1;
+		margin-bottom: 2rem;
+		letter-spacing: 1px;
+	}
 }
 
 .title {
@@ -166,6 +182,16 @@ html {
 	color: @my-lightgreen;
 }
 
+.site-info {
+	font-size: 1rem;
+	font-family: @my-fontfamily-2;
+	letter-spacing: 1px;
+	opacity: .5;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
 
 .rotate90 {
 

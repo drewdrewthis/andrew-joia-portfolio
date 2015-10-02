@@ -22,7 +22,7 @@ html {
   padding-top: 1em;
 }
 .top-navigation .container ul {
-  margin-bottom: -0.6rem;
+  margin-bottom: -0.4rem;
 }
 .top-navigation li,
 .social-links li {
@@ -38,7 +38,7 @@ html {
   max-width: 100%;
 }
 .intro-section .lead-in {
-  border-top: 1px dashed;
+  border-top: 1px dashed #9EBAB2;
   text-align: right;
   position: absolute;
   top: 0;
@@ -56,11 +56,12 @@ html {
   color: #CB4925;
 }
 .main-section {
-  background: url('../images/city-bg.jpg') no-repeat center center;
+  background: url('../images/city-bg.jpg') no-repeat fixed center;
   background-size: cover;
   border-top: 10px solid #CB4925;
   border-bottom: 10px solid #CB4925;
   padding: 0px;
+  position: relative;
 }
 .portfolio-section {
   background: rgba(46, 61, 57, 0.8);
@@ -119,6 +120,19 @@ html {
   border-color: #CB4925;
   color: #CB4925;
 }
+.info-section .info {
+  padding: 20em 0;
+  color: #F1FFFB;
+}
+.info-section button {
+  background-color: transparent;
+  padding: 2rem 9rem 1rem 1rem;
+  border: 1px solid #F1FFFB;
+  color: #F1FFFB;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
 .title {
   text-align: center;
   font-family: 'Oswald', sans-serif;
@@ -128,6 +142,16 @@ html {
   text-align: center;
   font-family: 'Quattrocento', serif;
   color: #F1FFFB;
+}
+.site-info {
+  font-size: 1rem;
+  font-family: 'Quattrocento', serif;
+  letter-spacing: 1px;
+  opacity: .5;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .rotate90 {
   transform: rotate(90deg);
