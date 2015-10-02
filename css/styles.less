@@ -5,6 +5,9 @@
 @my-midgreen: #9EBAB2;
 @my-redorange: #CB4925;
 @my-brown: #735046;
+@my-fontfamily-1: 'Oswald', sans-serif;
+@my-fontfamily-2: 'Quattrocento', serif;
+
 
 * {
 	border: 1px solid green;
@@ -17,9 +20,24 @@ html {
 .top-navigation {
 	background: white;
 	border-bottom: 10px solid @my-redorange;
+
+	a {
+		color: @my-brown;
+		font-family: @my-fontfamily-1;
+	}
+
+	a:hover, a .active {
+		color: @my-redorange;
+	}
+}
+
+.top-navigation li, .social-links li {
+	list-style: none;
+	display: inline-block;
 }
 
 .intro-section {
 	background: url('images/drew-silhouette.png') no-repeat bottom middle;
 	background-size: contain;
 }
+

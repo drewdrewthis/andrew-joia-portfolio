@@ -9,6 +9,19 @@ html {
   background: white;
   border-bottom: 10px solid #CB4925;
 }
+.top-navigation a {
+  color: #735046;
+  font-family: 'Oswald', sans-serif;
+}
+.top-navigation a:hover,
+.top-navigation a .active {
+  color: #CB4925;
+}
+.top-navigation li,
+.social-links li {
+  list-style: none;
+  display: inline-block;
+}
 .intro-section {
   background: url('images/drew-silhouette.png') no-repeat bottom middle;
   background-size: contain;
