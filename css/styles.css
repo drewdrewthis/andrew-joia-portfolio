@@ -192,7 +192,7 @@ html {
   border-right: 100px solid #CB4925;
   border-bottom: 50px solid transparent;
   position: fixed;
-  right: 200px;
+  right: calc((100% - 1200px) / 2);
   top: 56px;
   transform: scale(0.2);
 }
