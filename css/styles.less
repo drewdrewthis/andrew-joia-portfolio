@@ -76,7 +76,7 @@ html {
 }
 
 .main-section {
-	background: url('../images/city-bg.jpg') no-repeat fixed center;
+	background: url('../images/city-bg-lq.jpg') no-repeat fixed center;
 	background-size: cover;
 	border-top: 10px solid @my-redorange;
 	border-bottom: 10px solid @my-redorange;
@@ -118,12 +118,20 @@ html {
 				margin-top: -10rem;
 				padding: 2rem;
 				font-size: 2rem;
-			}
+		}
+
+		&:focus {
+			outline: none;
+		}
 	}
 }
 
+
 .info-section {
 	background: rgba(115, 80, 70, 0.8);
+	text-align: center;
+	font-family: @my-fontfamily-2;
+	color: @my-lightgreen;
 
 	.social-links {
 		width: 100%;
@@ -182,12 +190,6 @@ html {
 	color: @my-redorange;
 }
 
-.info-section {
-	text-align: center;
-	font-family: @my-fontfamily-2;
-	color: @my-lightgreen;
-}
-
 .site-info {
 	font-size: 1rem;
 	font-family: @my-fontfamily-2;
@@ -197,6 +199,16 @@ html {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+}
+
+.modal-header {
+	background: black;
+
+	.close {
+		color: white;
+		margin-top: -11px;
+		opacity: 1;
+	}
 }
 
 // Shapes

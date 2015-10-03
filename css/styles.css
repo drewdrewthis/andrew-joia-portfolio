@@ -52,7 +52,7 @@ html {
   color: #CB4925;
 }
 .main-section {
-  background: url('../images/city-bg.jpg') no-repeat fixed center;
+  background: url('../images/city-bg-lq.jpg') no-repeat fixed center;
   background-size: cover;
   border-top: 10px solid #CB4925;
   border-bottom: 10px solid #CB4925;
@@ -91,8 +91,14 @@ html {
   padding: 2rem;
   font-size: 2rem;
 }
+.portfolio-section .port-item:focus {
+  outline: none;
+}
 .info-section {
   background: rgba(115, 80, 70, 0.8);
+  text-align: center;
+  font-family: 'Quattrocento', serif;
+  color: #F1FFFB;
 }
 .info-section .social-links {
   width: 100%;
@@ -141,11 +147,6 @@ html {
   font-family: 'Oswald', sans-serif;
   color: #CB4925;
 }
-.info-section {
-  text-align: center;
-  font-family: 'Quattrocento', serif;
-  color: #F1FFFB;
-}
 .site-info {
   font-size: 1rem;
   font-family: 'Quattrocento', serif;
@@ -155,6 +156,14 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.modal-header {
+  background: black;
+}
+.modal-header .close {
+  color: white;
+  margin-top: -11px;
+  opacity: 1;
 }
 #triangle-left {
   width: 0;
