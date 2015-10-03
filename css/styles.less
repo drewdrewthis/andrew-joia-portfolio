@@ -199,6 +199,24 @@ html {
 	left: 0;
 }
 
+// Shapes
+
+#triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid @my-redorange;
+	border-bottom: 50px solid transparent;
+
+	// Custom style
+
+	position: fixed;
+    right: ~"calc((100% - 1200px) / 2)";
+    top: 56px;
+    transform: scale(0.2);
+    display: block;
+}
+
 @media only screen and (min-width: 970px) {
 	.top-navigation {
 		position: fixed;
@@ -240,21 +258,9 @@ html {
 
 		}
 	}
+
+	#triangle-left {
+		display: block;
+	}
 }
 
-// Shapes
-
-#triangle-left {
-	width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-right: 100px solid @my-redorange;
-	border-bottom: 50px solid transparent;
-
-	// Custom style
-
-	position: fixed;
-    right: ~"calc((100% - 1200px) / 2)";
-    top: 56px;
-    transform: scale(0.2);
-}

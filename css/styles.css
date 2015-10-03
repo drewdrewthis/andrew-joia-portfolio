@@ -156,6 +156,18 @@ html {
   bottom: 0;
   left: 0;
 }
+#triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #CB4925;
+  border-bottom: 50px solid transparent;
+  position: fixed;
+  right: calc((100% - 1200px) / 2);
+  top: 56px;
+  transform: scale(0.2);
+  display: block;
+}
 @media only screen and (min-width: 970px) {
   .top-navigation {
     position: fixed;
@@ -184,15 +196,7 @@ html {
     /* Internet Explorer */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   }
-}
-#triangle-left {
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-right: 100px solid #CB4925;
-  border-bottom: 50px solid transparent;
-  position: fixed;
-  right: calc((100% - 1200px) / 2);
-  top: 56px;
-  transform: scale(0.2);
+  #triangle-left {
+    display: block;
+  }
 }
