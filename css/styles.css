@@ -71,6 +71,7 @@ html {
 .portfolio-section .port-item {
   padding: 3rem;
   position: relative;
+  min-height: 24rem;
 }
 .portfolio-section .port-item figcaption {
   background: rgba(0, 0, 0, 0.8);
