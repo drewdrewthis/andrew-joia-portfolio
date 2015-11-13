@@ -1,4 +1,5 @@
 /* Color Scheme Variables */
+/* Mixins */
 * {
   transition: all 0.5s ease;
 }
@@ -65,7 +66,6 @@ html {
 }
 .portfolio-section .portfolio {
   width: 100%;
-  padding: 3rem;
   margin: auto;
 }
 .portfolio-section .port-item {
@@ -90,6 +90,11 @@ html {
 .portfolio-section .port-item .fig-caption {
   position: absolute;
 }
+.portfolio-section .port-item:hover {
+  -webkit-box-shadow: inset 0 0 5rem black;
+  -moz-box-shadow: inset 0 0 5rem black;
+  box-shadow: inset 0 0 5rem black;
+}
 .portfolio-section .port-item:hover figcaption {
   height: 10rem;
   margin-top: -10rem;
@@ -107,7 +112,8 @@ html {
   outline: none;
 }
 .portfolio-section .port-image {
-  background: cover 50% 50%;
+  background: center center no-repeat;
+  background-size: cover;
 }
 .portfolio-section #nyt {
   background-image: url(../images/nyt-screenshot.png);
@@ -223,4 +229,7 @@ html {
   #triangle-left {
     display: block;
   }
+}
+.no-padding {
+  padding: 0;
 }

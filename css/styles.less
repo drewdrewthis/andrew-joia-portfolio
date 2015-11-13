@@ -8,6 +8,14 @@
 @my-fontfamily-1: 'Oswald', sans-serif;
 @my-fontfamily-2: 'Quattrocento', serif;
 
+/* Mixins */
+
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+
 
 * {
 	//border: 1px solid green;
@@ -90,7 +98,6 @@ html {
 
 	.portfolio {
 		width: 100%;
-		padding: 3rem;
 		margin: auto;
 	}
 
@@ -118,19 +125,24 @@ html {
 			position: absolute;
 		}
 
-		&:hover figcaption {
+		&:hover {
+
+			.box-shadow(inset 0 0 5rem black); 
+
+			figcaption {
 				height: 10rem;
 				margin-top: -10rem;
 				padding: 2rem;
 				font-size: 2rem;
-		}
+			}
 
-		&:hover .fig-caption  {
-			height: 10rem;
-			margin-top: 0;
-			padding: 2rem;
-			font-size: 2rem;
-			width: 100%;
+			.fig-caption  {
+				height: 10rem;
+				margin-top: 0;
+				padding: 2rem;
+				font-size: 2rem;
+				width: 100%;
+			}
 		}
 
 		&:focus {
@@ -139,7 +151,9 @@ html {
 	}
 
 	.port-image {
-		background: cover 50% 50%;
+		background: center center no-repeat;
+		background-size: cover;
+
 	}
 
 	#nyt {
@@ -295,3 +309,6 @@ html {
 	}
 }
 
+.no-padding {
+	padding: 0;
+}
