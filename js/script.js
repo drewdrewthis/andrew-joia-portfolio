@@ -21,13 +21,55 @@ $(function(){
 			alt: "Karma Clone",
 			data_target: "",
 			img: "./images/karma-clone-screenshot.jpg"
+		},
+		{ 
+			caption: "YouTube API Project",
+			url: "http://drewdrewthis.github.io/Thinkful-Tube-Project/",
+			alt: "YouTube API Project",
+			data_target: "",
+			img: "./images/thinkful-tube-screenshot.png"
+		},
+		{ 
+			caption: "Hot or Cold Game",
+			url: "http://drewdrewthis.github.io/fewd-hot-or-cold/",
+			alt: "Hot or Cold Game",
+			data_target: "",
+			img: "./images/hot-or-cold-screenshot.png"
+		},
+		{ 
+			caption: "Who Said? Quiz Game",
+			url: "http://drewdrewthis.github.io/fewd-who-said-quiz/",
+			alt: "Who Said? Quiz",
+			data_target: "",
+			img: "./images/quiz-screenshot.png"
+		},
+		{ 
+			caption: "Shopping List App",
+			url: "http://drewdrewthis.github.io/fewd-shopping-list/",
+			alt: "Shopping List App",
+			data_target: "",
+			img: "./images/shopping-list-screenshot.png"
+		},
+		{ 
+			caption: "Streetfighter Game",
+			url: "http://drewdrewthis.github.io/jquery-streetfighter/main.html",
+			alt: "Streetfighter Game",
+			data_target: "",
+			img: "./images/streetfighter-screenshot.png"
+		},
+		{ 
+			caption: "Streetfighter Game",
+			url: "http://drewdrewthis.github.io/FizzBuzz/",
+			alt: "FizzBuzz",
+			data_target: "",
+			img: "./images/fizzbuzz-screenshot.png"
 		}
 	]
 
 	function buildPort() {
 		$.each(portfolio, function(index, portItem) {
 			var html = '<a id="' + portItem.id + 
-				'"class="port-item port-image col-md-4 col-lg-3 col-xs-12" ' + 
+				'"class="port-item port-image col-sm-4 col-lg-3 col-xs-12" ' + 
 				'href="' + portItem.url + 
 				'"alt="' + portItem.alt + '" data-toggle="modal" data-target="' + 
 				portItem.data_target + '" style="background-image:url(' +
