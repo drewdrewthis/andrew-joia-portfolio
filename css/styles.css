@@ -69,11 +69,12 @@ html {
   margin: auto;
 }
 .portfolio-section .port-item {
-  padding: 3rem;
+  padding: 0;
   position: relative;
   min-height: 24rem;
 }
-.portfolio-section .port-item figcaption {
+.portfolio-section .port-item figcaption,
+.portfolio-section .port-item .fig-caption {
   background: rgba(0, 0, 0, 0.8);
   height: 0rem;
   padding: 0;
@@ -86,14 +87,30 @@ html {
   border-top: 0.5em solid #CB4925;
   overflow: hidden;
 }
+.portfolio-section .port-item .fig-caption {
+  position: absolute;
+}
 .portfolio-section .port-item:hover figcaption {
   height: 10rem;
   margin-top: -10rem;
   padding: 2rem;
   font-size: 2rem;
 }
+.portfolio-section .port-item:hover .fig-caption {
+  height: 10rem;
+  margin-top: 0;
+  padding: 2rem;
+  font-size: 2rem;
+  width: 100%;
+}
 .portfolio-section .port-item:focus {
   outline: none;
+}
+.portfolio-section .port-image {
+  background: cover 50% 50%;
+}
+.portfolio-section #nyt {
+  background-image: url(../images/nyt-screenshot.png);
 }
 .info-section {
   background: rgba(115, 80, 70, 0.8);
