@@ -31,6 +31,9 @@ html {
   list-style: none;
   display: inline-block;
 }
+.intro-section {
+  border-bottom: 1rem solid black;
+}
 .intro-section .container {
   height: 46rem;
   position: relative;

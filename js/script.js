@@ -2,13 +2,6 @@ $(function(){
 	
 	var portfolio = [
 		{ 
-			caption: "New York Times Hack",
-			url: "",
-			alt: "NYT Screenshot",
-			data_target: "#NYTScreenshot",
-			img: "./images/nyt-screenshot.png"
-		},
-		{ 
 			caption: "About Me Page",
 			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
 			alt: "About Me",
@@ -16,11 +9,18 @@ $(function(){
 			img: "./images/aboutme-screenshot.png"
 		},
 		{ 
-			caption: "Karma Clone",
-			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
-			alt: "Karma Clone",
+			caption: "Who Said? Quiz Game",
+			url: "http://drewdrewthis.github.io/fewd-who-said-quiz/",
+			alt: "Who Said? Quiz",
 			data_target: "",
-			img: "./images/karma-clone-screenshot.jpg"
+			img: "./images/quiz-screenshot.png"
+		},
+		{ 
+			caption: "Shopping List App",
+			url: "http://drewdrewthis.github.io/fewd-shopping-list/",
+			alt: "Shopping List App",
+			data_target: "",
+			img: "./images/shopping-list-screenshot.png"
 		},
 		{ 
 			caption: "YouTube API Project",
@@ -37,18 +37,18 @@ $(function(){
 			img: "./images/hot-or-cold-screenshot.png"
 		},
 		{ 
-			caption: "Who Said? Quiz Game",
-			url: "http://drewdrewthis.github.io/fewd-who-said-quiz/",
-			alt: "Who Said? Quiz",
-			data_target: "",
-			img: "./images/quiz-screenshot.png"
+			caption: "New York Times Hack",
+			url: "",
+			alt: "NYT Screenshot",
+			data_target: "#NYTScreenshot",
+			img: "./images/nyt-screenshot.png"
 		},
 		{ 
-			caption: "Shopping List App",
-			url: "http://drewdrewthis.github.io/fewd-shopping-list/",
-			alt: "Shopping List App",
+			caption: "Karma Clone",
+			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
+			alt: "Karma Clone",
 			data_target: "",
-			img: "./images/shopping-list-screenshot.png"
+			img: "./images/karma-clone-screenshot.jpg"
 		},
 		{ 
 			caption: "Streetfighter Game",
