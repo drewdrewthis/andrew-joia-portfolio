@@ -63,7 +63,7 @@ html h2 {
 .disco-ball {
   position: absolute;
   top: 6rem;
-  width: 19rem;
+  width: 15%;
   right: 32%;
   display: none;
   opacity: .7;
