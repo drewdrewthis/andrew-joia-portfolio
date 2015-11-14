@@ -62,7 +62,7 @@ $(function(){
 			url: "",
 			alt: "FizzBuzz",
 			data_target: "#FizzBuzz",
-			img: "./images/fizzbuzz-screenshot.png"
+			img: "./images/fizzbuzz.jpg"
 		}
 	]
 
