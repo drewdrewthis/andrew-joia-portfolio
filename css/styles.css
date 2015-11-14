@@ -67,6 +67,14 @@ html {
 .portfolio-section .portfolio {
   width: 100%;
   margin: auto;
+  background-color: black;
+  position: relative;
+}
+.portfolio-section .portfolio h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 1rem 0 0;
 }
 @media screen and (max-width: 767px) {
   .portfolio-section .portfolio {
