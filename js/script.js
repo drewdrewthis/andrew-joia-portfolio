@@ -108,7 +108,6 @@ $(function(){
 			if($('.disco-mode input[type="checkbox"]').prop("checked")) {
 				var color = randomColor();
 				$('.intro-section').css({"background-color": color });
-				console.log(color);
 			}
 			setTimeout(changeColor, 100);	
 		};
