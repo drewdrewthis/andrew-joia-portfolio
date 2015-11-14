@@ -5,7 +5,7 @@ $(function(){
 			caption: "New York Times Hack",
 			url: "",
 			alt: "NYT Screenshot",
-			data_target: "#NYTSCreenshot",
+			data_target: "#NYTScreenshot",
 			img: "./images/nyt-screenshot.png"
 		},
 		{ 
@@ -58,10 +58,10 @@ $(function(){
 			img: "./images/streetfighter-screenshot.png"
 		},
 		{ 
-			caption: "Streetfighter Game",
-			url: "http://drewdrewthis.github.io/FizzBuzz/",
+			caption: "FizzBuzz",
+			url: "",
 			alt: "FizzBuzz",
-			data_target: "",
+			data_target: "#FizzBuzz",
 			img: "./images/fizzbuzz-screenshot.png"
 		}
 	]
@@ -82,5 +82,26 @@ $(function(){
 		});
 	};
 
+	function loadFizzBuzz() {
+
+		$.ajax({
+			url: "http://drewdrewthis.github.io/FizzBuzz/script.js",
+			dataType: "script",
+			success: success
+		});
+	}
+
 	buildPort();
+	resizeDiv();
 });
+
+window.onresize = function(event) {
+	resizeDiv();
+};
+
+function resizeDiv() {
+	vpw = $(window).width();
+	vph = $(window).height();
+	modalH = vph*.7;
+	$('.maxHeight').css({'height': modalH + 'px'});
+};
