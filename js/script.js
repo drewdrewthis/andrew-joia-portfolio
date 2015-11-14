@@ -89,7 +89,44 @@ $(function(){
 			dataType: "script",
 			success: success
 		});
-	}
+	};
+
+	function randomColor() {
+        var r = Math.floor(Math.random() * (250 - 0)),
+        	g = Math.floor(Math.random() * (250 - 0)),
+        	b = Math.floor(Math.random() * (250 - 0)),
+        	a = .5;
+        var color = 'rgba('+r+','+g+','+b+','+a+')';
+        
+        return color;
+    };
+
+
+	$('.disco-mode input[type="checkbox"]').on('click', function() {
+		//while($(this).prop('checked') && flag == 2){
+		
+		var i = 0;
+
+		var changeColor = function() {
+			if($('.disco-mode input[type="checkbox"]').prop("checked")) {
+				var color = randomColor();
+				$('.intro-section').css({"background-color": color });
+				console.log(color);
+				i++;
+			}
+			setTimeout(changeColor, 200);	
+		};
+
+		if($('.disco-mode input[type="checkbox"]').prop("checked")) {
+			changeColor();	
+		}
+		else {
+			$('.intro-section').css({"background-color": "white" });
+		}
+		
+		
+		
+	});
 
 	buildPort();
 	resizeDiv();
@@ -106,3 +143,4 @@ function resizeDiv() {
 	modalH = vph*.7;
 	$('.maxHeight').css({'height': modalH + 'px'});
 };
+

@@ -58,6 +58,82 @@ html h2 {
   font-family: 'Quattrocento', serif;
   color: #CB4925;
 }
+.disco-mode {
+  position: absolute;
+  right: 1rem;
+  z-index: 1000;
+  top: 1rem;
+}
+.disco-mode .onoffswitch {
+  position: relative;
+  width: 95px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.disco-mode .onoffswitch-checkbox {
+  display: none;
+}
+.disco-mode .onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #F1FFFB;
+  border-radius: 50px;
+}
+.disco-mode .onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.disco-mode .onoffswitch-inner:before,
+.disco-mode .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 27px;
+  padding: 0;
+  line-height: 27px;
+  font-size: 20px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.disco-mode .onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 14px;
+  background-color: #2E3D39;
+  color: #F1FFFB;
+}
+.disco-mode .onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 14px;
+  background-color: #2E3D39;
+  color: #CB4925;
+  text-align: right;
+}
+.disco-mode .onoffswitch-switch {
+  display: block;
+  width: 22px;
+  margin: 2.5px;
+  background: #CB4925;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 64px;
+  border: 2px solid #F1FFFB;
+  border-radius: 50px;
+  transition: all 0.3s ease-in 0s;
+}
+.disco-mode .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.disco-mode .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+  background-color: #F1FFFB;
+}
 .main-section {
   background-size: cover;
   border-top: 10px solid #CB4925;
@@ -190,7 +266,7 @@ html h2 {
 .info-section .info {
   color: #F1FFFB;
 }
-.info-section button {
+.info-section .ddt-button {
   background-color: transparent;
   padding: 2rem 9rem 1rem 1rem;
   border: 1px solid #F1FFFB;
@@ -199,9 +275,33 @@ html h2 {
   margin-bottom: 2rem;
   letter-spacing: 1px;
 }
-.info-section button:hover {
+.info-section .ddt-button:hover {
   border: 1px solid #CB4925;
   color: #CB4925;
+}
+.info-section .reach-out {
+  background: #CB4925;
+  color: #F1FFFB;
+  width: 140px;
+  height: 140px;
+  padding: 3.4rem 0;
+  font-weight: bold;
+  line-height: 3.7rem;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 3.1rem;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 2rem;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+.info-section .reach-out:hover {
+  background: #9EBAB2;
+  color: #CB4925;
+  -webkit-box-shadow: inset 0 0 4rem black;
+  -moz-box-shadow: inset 0 0 4rem black;
+  box-shadow: inset 0 0 4rem black;
 }
 .title {
   text-align: center;

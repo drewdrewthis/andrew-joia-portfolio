@@ -90,6 +90,60 @@ html {
 	}
 }
 
+.disco-mode {
+	position: absolute;
+    right: 1rem;
+    z-index: 1000;
+    top: 1rem;
+    
+	.onoffswitch {
+	    position: relative; width: 95px;
+	    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	}
+	.onoffswitch-checkbox {
+	    display: none;
+	}
+	.onoffswitch-label {
+	    display: block; overflow: hidden; cursor: pointer;
+	    border: 2px solid #F1FFFB; border-radius: 50px;
+	}
+	.onoffswitch-inner {
+	    display: block; width: 200%; margin-left: -100%;
+	    transition: margin 0.3s ease-in 0s;
+	}
+	.onoffswitch-inner:before, .onoffswitch-inner:after {
+	    display: block; float: left; width: 50%; height: 27px; padding: 0; line-height: 27px;
+	    font-size: 20px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+	    box-sizing: border-box;
+	}
+	.onoffswitch-inner:before {
+	    content: "ON";
+	    padding-left: 14px;
+	    background-color: #2E3D39; color: #F1FFFB;
+	}
+	.onoffswitch-inner:after {
+	    content: "OFF";
+	    padding-right: 14px;
+	    background-color: #2E3D39; color: #CB4925;
+	    text-align: right;
+	}
+	.onoffswitch-switch {
+	    display: block; width: 22px; margin: 2.5px;
+	    background: #CB4925;
+	    position: absolute; top: 0; bottom: 0;
+	    right: 64px;
+	    border: 2px solid #F1FFFB; border-radius: 50px;
+	    transition: all 0.3s ease-in 0s; 
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	    margin-left: 0;
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	    right: 0px; 
+	    background-color: #F1FFFB; 
+	}
+}
+
 .main-section {
 	//background: url('../images/city-bg-lq.jpg') no-repeat fixed center;
 	background-size: cover;
@@ -195,7 +249,6 @@ html {
 
 }
 
-
 .info-section {
 	background: rgba(115, 80, 70, 0.8);
 	text-align: center;
@@ -221,11 +274,11 @@ html {
 			width: 6rem;
 			background: @my-redorange;
 			padding: 1.4rem 0 0 0;
-		}
 
-		.fa:hover {
-			background: @my-midgreen;
-			color: @my-redorange;
+			&:hover {
+				background: @my-midgreen;
+				color: @my-redorange;
+			}
 		}
 
 		li {
@@ -241,7 +294,7 @@ html {
 		color: @my-lightgreen;
 	}
 
-	button {
+	.ddt-button {
 		background-color: transparent;
 		padding: 2rem 9rem 1rem 1rem;
 		border: 1px solid @my-lightgreen;
@@ -253,6 +306,28 @@ html {
 		&:hover {
 			border: 1px solid @my-redorange;
 			color: @my-redorange;
+		}
+	}
+
+	.reach-out {
+		background: @my-redorange;
+		color: @my-lightgreen;
+		width: 140px;
+		height: 140px;
+		padding: 3.4rem 0;
+		font-weight: bold;
+		line-height: 3.7rem;
+		border-radius: 100%;
+		display: inline-block;
+		font-size: 3.1rem;
+		font-family: @my-fontfamily-1;
+		margin-top: 2rem;
+		.box-shadow(0 0 2rem rgba(0,0,0,.5));
+
+		&:hover {
+			background: @my-midgreen;
+			color: @my-redorange;
+			.box-shadow(inset 0 0 4rem black);
 		}
 	}
 }
@@ -298,6 +373,10 @@ html {
     transform: scale(0.2);
     display: block;
 }
+
+// On-off Switch from https://proto.io/freebies/onoff/
+
+
 
 @media only screen and (min-width: 970px) {
 	.top-navigation {
