@@ -1,7 +1,13 @@
 /* Color Scheme Variables */
 /* Mixins */
+* {
+  transition: all 0.5s ease;
+}
 html {
   -webkit-font-smoothing: antialiased;
+}
+html h2 {
+  font-family: 'Oswald', sans-serif;
 }
 .top-navigation {
   background: white;
@@ -61,7 +67,10 @@ html {
 }
 .portfolio-section {
   background: rgba(46, 61, 57, 0.8);
-  padding-bottom: 4rem;
+  padding-bottom: 15rem;
+}
+.portfolio-section .row {
+  margin: 0;
 }
 .portfolio-section .portfolio {
   width: 100%;
@@ -69,7 +78,11 @@ html {
   background-color: black;
   position: relative;
 }
-.portfolio-section .portfolio h2 {
+.portfolio-section .portfolio .port-bg-txt-1 {
+  padding: 0 1rem;
+  margin: 4.7rem 0 -0.5rem 0;
+}
+.portfolio-section .portfolio .port-bg-txt-2 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -144,6 +157,9 @@ html {
   text-align: center;
   font-family: 'Quattrocento', serif;
   color: #F1FFFB;
+}
+.info-section .devicons {
+  font-size: 5rem;
 }
 .info-section .social-links {
   width: 100%;

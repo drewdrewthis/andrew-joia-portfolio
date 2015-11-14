@@ -58,7 +58,7 @@ $(function(){
 			img: "./images/streetfighter-screenshot.png"
 		},
 		{ 
-			caption: "FizzBuzz",
+			caption: "Shh.. FizzBuzz",
 			url: "",
 			alt: "FizzBuzz",
 			data_target: "#FizzBuzz",
