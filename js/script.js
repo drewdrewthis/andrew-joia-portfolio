@@ -73,7 +73,7 @@ $(function(){
 				'href="' + portItem.url + 
 				'"alt="' + portItem.alt + '" data-toggle="modal" data-target="' + 
 				portItem.data_target + '" style="background-image:url(' +
-				portItem.img + ');">\
+				portItem.img + ');" target="_blank">\
 					<div class="fig-caption">' + portItem.caption + 
 					'</div>\
 				</a>';
