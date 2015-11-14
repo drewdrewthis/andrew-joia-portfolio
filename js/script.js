@@ -93,6 +93,7 @@ $(function(){
 
 	buildPort();
 	resizeDiv();
+	$.backstretch('./images/city-bg-lq.jpg');
 });
 
 window.onresize = function(event) {

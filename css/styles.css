@@ -1,10 +1,6 @@
 /* Color Scheme Variables */
 /* Mixins */
-* {
-  transition: all 0.5s ease;
-}
 html {
-  background: lightgrey;
   -webkit-font-smoothing: antialiased;
 }
 .top-navigation {
@@ -33,6 +29,7 @@ html {
 }
 .intro-section {
   border-bottom: 1rem solid black;
+  background-color: white;
 }
 .intro-section .container {
   height: 46rem;
@@ -56,7 +53,6 @@ html {
   color: #CB4925;
 }
 .main-section {
-  background: url('../images/city-bg-lq.jpg') no-repeat fixed center;
   background-size: cover;
   border-top: 10px solid #CB4925;
   border-bottom: 10px solid #CB4925;
