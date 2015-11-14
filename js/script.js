@@ -114,10 +114,12 @@ $(function(){
 		};
 
 		if($('.disco-mode input[type="checkbox"]').prop("checked")) {
-			changeColor();	
+			changeColor();
+			$('.disco-ball').show();	
 		}
 		else {
 			$('.intro-section').css({"background-color": "white" });
+			$('.disco-ball').hide();	
 		}
 
 	});
