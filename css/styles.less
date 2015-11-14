@@ -63,6 +63,8 @@ html {
 
 	border-bottom: 1rem solid black;
 	background-color: white;
+	position: relative;
+	transition: none;
 	
 	.container {
 		height: 46rem;
@@ -92,12 +94,13 @@ html {
 
 .disco-mode {
 	position: absolute;
-    right: 1rem;
+    left: 2rem;
     z-index: 1000;
-    top: 1rem;
+    top: 8.8rem;
+    opacity: .5;
     
 	.onoffswitch {
-	    position: relative; width: 95px;
+	    position: relative; width: 81px;
 	    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 	}
 	.onoffswitch-checkbox {
@@ -105,34 +108,37 @@ html {
 	}
 	.onoffswitch-label {
 	    display: block; overflow: hidden; cursor: pointer;
-	    border: 2px solid #F1FFFB; border-radius: 50px;
+	    border: 2px solid #999999; border-radius: 100px;
 	}
 	.onoffswitch-inner {
 	    display: block; width: 200%; margin-left: -100%;
 	    transition: margin 0.3s ease-in 0s;
 	}
 	.onoffswitch-inner:before, .onoffswitch-inner:after {
-	    display: block; float: left; width: 50%; height: 27px; padding: 0; line-height: 27px;
-	    font-size: 20px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+	    display: block; float: left; width: 50%; height: 18px; padding: 0; line-height: 18px;
+	    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
 	    box-sizing: border-box;
 	}
 	.onoffswitch-inner:before {
-	    content: "ON";
-	    padding-left: 14px;
-	    background-color: #2E3D39; color: #F1FFFB;
+	    content: "DISCO MODE";
+	    padding-left: 10px;
+	    background-color: #472966; color: #FFFFFF;
 	}
 	.onoffswitch-inner:after {
 	    content: "OFF";
-	    padding-right: 14px;
-	    background-color: #2E3D39; color: #CB4925;
+	    padding-right: 10px;
+	    background-color: #EEEEEE; color: #999999;
 	    text-align: right;
 	}
 	.onoffswitch-switch {
-	    display: block; width: 22px; margin: 2.5px;
-	    background: #CB4925;
+	    display: block;
+	    width: 12px;
+	    height: 12px;
+	    margin: 4px;
+	    background: #FFFFFF;
 	    position: absolute; top: 0; bottom: 0;
-	    right: 64px;
-	    border: 2px solid #F1FFFB; border-radius: 50px;
+	    right: 59px;
+	    border: 2px solid #999999; border-radius: 100px;
 	    transition: all 0.3s ease-in 0s; 
 	}
 	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
@@ -140,7 +146,6 @@ html {
 	}
 	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
 	    right: 0px; 
-	    background-color: #F1FFFB; 
 	}
 }
 
