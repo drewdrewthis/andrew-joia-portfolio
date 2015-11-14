@@ -92,9 +92,9 @@ $(function(){
 	};
 
 	function randomColor() {
-        var r = Math.floor(Math.random() * (250 - 0)),
-        	g = Math.floor(Math.random() * (250 - 0)),
-        	b = Math.floor(Math.random() * (250 - 0)),
+        var r = Math.floor(Math.random() * (255 - 0)),
+        	g = Math.floor(Math.random() * (255 - 0)),
+        	b = Math.floor(Math.random() * (255 - 0)),
         	a = .7;
         var color = 'rgba('+r+','+g+','+b+','+a+')';
         
