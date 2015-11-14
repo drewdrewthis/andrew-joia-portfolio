@@ -110,7 +110,7 @@ $(function(){
 				$('.intro-section').css({"background-color": color });
 				console.log(color);
 			}
-			setTimeout(changeColor, 300);	
+			setTimeout(changeColor, 100);	
 		};
 
 		if($('.disco-mode input[type="checkbox"]').prop("checked")) {
