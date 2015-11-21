@@ -123,9 +123,9 @@ $(function(){
 
 	});
 
-	$('.port-item').on("click", function(){
-		$('#prog-info-box').toggleClass('hidden');
-		$('#port-box').toggleClass('col-md-8');
+	$('#portfolio').on("click", function(){
+		$('#prog-info-box').toggleClass('no-width');
+		$('#port-box').toggleClass('full-width');
 	});
 
 	buildPort();

@@ -152,6 +152,12 @@ html h2 {
   padding: 0px;
   position: relative;
 }
+.full-width {
+  width: 100%;
+}
+.no-width {
+  width: 0%;
+}
 .portfolio-section {
   background: rgba(46, 61, 57, 0.8);
   padding-bottom: 15rem;
