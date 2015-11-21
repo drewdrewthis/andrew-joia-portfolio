@@ -123,6 +123,11 @@ $(function(){
 
 	});
 
+	$('.port-item').on("click", function(){
+		$('#prog-info-box').toggleClass('hidden');
+		$('#port-box').toggleClass('col-md-8');
+	});
+
 	buildPort();
 	resizeDiv();
 	$.backstretch('./images/city-bg-lq.jpg');

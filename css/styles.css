@@ -156,8 +156,12 @@ html h2 {
   background: rgba(46, 61, 57, 0.8);
   padding-bottom: 15rem;
 }
+.portfolio-section #proj-info-box {
+  background: white;
+}
 .portfolio-section .row {
   margin: 0;
+  background: white;
 }
 .portfolio-section .portfolio {
   width: 100%;
