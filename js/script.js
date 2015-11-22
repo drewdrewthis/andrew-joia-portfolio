@@ -6,14 +6,14 @@ $(function(){
 			url: "",
 			alt: "NYT Screenshot",
 			data_target: "#NYTScreenshot",
-			img: "./images/nyt-screenshot.png"
+			img: "./images/nyt-screenshot.jpg"
 		},
 		{ 
 			caption: "About Me Page",
 			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
 			alt: "About Me",
 			data_target: "",
-			img: "./images/aboutme-screenshot.png"
+			img: "./images/aboutme-screenshot.jpg"
 		},
 		{ 
 			caption: "Karma Clone",
@@ -27,42 +27,42 @@ $(function(){
 			url: "http://drewdrewthis.github.io/Thinkful-Tube-Project/",
 			alt: "YouTube API Project",
 			data_target: "",
-			img: "./images/thinkful-tube-screenshot.png"
+			img: "./images/thinkful-tube-screenshot.jpg"
 		},
 		{ 
 			caption: "Hot or Cold Game",
 			url: "http://drewdrewthis.github.io/fewd-hot-or-cold/",
 			alt: "Hot or Cold Game",
 			data_target: "",
-			img: "./images/hot-or-cold-screenshot.png"
+			img: "./images/hot-or-cold-screenshot.jpg"
 		},
 		{ 
 			caption: "Who Said? Quiz Game",
 			url: "http://drewdrewthis.github.io/fewd-who-said-quiz/",
 			alt: "Who Said? Quiz",
 			data_target: "",
-			img: "./images/quiz-screenshot.png"
+			img: "./images/quiz-screenshot.jpg"
 		},
 		{ 
 			caption: "Shopping List App",
 			url: "http://drewdrewthis.github.io/fewd-shopping-list/",
 			alt: "Shopping List App",
 			data_target: "",
-			img: "./images/shopping-list-screenshot.png"
+			img: "./images/shopping-list-screenshot.jpg"
 		},
 		{ 
 			caption: "Streetfighter Game",
 			url: "http://drewdrewthis.github.io/jquery-streetfighter/main.html",
 			alt: "Streetfighter Game",
 			data_target: "",
-			img: "./images/streetfighter-screenshot.png"
+			img: "./images/streetfighter-screenshot.jpg"
 		},
 		{ 
 			caption: "FizzBuzz",
 			url: "",
 			alt: "FizzBuzz",
 			data_target: "#FizzBuzz",
-			img: "./images/fizzbuzz-screenshot.png"
+			img: "./images/fizzbuzz.jpg"
 		}
 	]
 
