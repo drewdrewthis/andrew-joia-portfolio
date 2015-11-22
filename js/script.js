@@ -2,7 +2,6 @@ $(function(){
 	
 	var portfolio = [
 		{ 
-<<<<<<< HEAD
 			caption: "New York Times Hack",
 			url: "",
 			alt: "NYT Screenshot",
@@ -10,8 +9,6 @@ $(function(){
 			img: "./images/nyt-screenshot.jpg"
 		},
 		{ 
-=======
->>>>>>> feature/sliding-info-box
 			caption: "About Me Page",
 			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
 			alt: "About Me",
@@ -47,30 +44,24 @@ $(function(){
 			img: "./images/hot-or-cold-screenshot.jpg"
 		},
 		{ 
-<<<<<<< HEAD
 			caption: "Who Said? Quiz Game",
 			url: "http://drewdrewthis.github.io/fewd-who-said-quiz/",
 			alt: "Who Said? Quiz",
 			data_target: "",
-			img: "./images/quiz-screenshot.jpg"
-=======
+			img: "./images/quiz-screenshot.jpg",
 			caption: "New York Times Hack",
 			url: "",
 			alt: "NYT Screenshot",
 			data_target: "#NYTScreenshot",
 			img: "./images/nyt-screenshot.jpg"
->>>>>>> feature/sliding-info-box
 		},
 		{ 
 			caption: "Karma Clone",
 			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
 			alt: "Karma Clone",
 			data_target: "",
-<<<<<<< HEAD
-			img: "./images/shopping-list-screenshot.jpg"
-=======
+			img: "./images/shopping-list-screenshot.jpg",
 			img: "./images/karma-clone-screenshot.jpg"
->>>>>>> feature/sliding-info-box
 		},
 		{ 
 			caption: "Streetfighter Game",
@@ -143,11 +134,6 @@ $(function(){
 			$('.disco-ball').hide();	
 		}
 
-	});
-
-	$('#portfolio').on("click", function(){
-		$('#prog-info-box').toggleClass('no-width');
-		$('#port-box').toggleClass('full-width');
 	});
 
 	buildPort();
