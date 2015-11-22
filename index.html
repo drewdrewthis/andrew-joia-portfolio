@@ -15,12 +15,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<!-- Google Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Oswald|Quattrocento' rel='stylesheet' type='text/css'>
+		<!--<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>-->
+		<link href='devicons-master/css/devicons.min.css' rel='stylesheet'>
 		<link rel="stylesheet" href="css/styles.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<!-- Bootstrap CDN -->
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="js/script.js"></script>
 		
 	</head>
 	<body>
@@ -29,8 +26,8 @@
 				<div class="container">
 					<ul>
 						<li><a class="active" href="#">home</a></li>
-						<li><a href="about-me-page/about.html">about</a></li>
 						<li><a href="#portfolio">portfolio</a></li>
+						<li><a href="#about">about</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -43,37 +40,87 @@
 				</div>
 			</div>
 			<div id="triangle-left"></div>
+			<div class="disco-mode">
+				<div class="onoffswitch">
+				    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+				    <label class="onoffswitch-label" for="myonoffswitch">
+				        <span class="onoffswitch-inner"></span>
+				        <span class="onoffswitch-switch"></span>
+				    </label>
+				</div>
+			</div>
+			<img src="images/animated-disco-ball-5-2.gif" alt="" class="disco-ball">
 		</section>
 		<section class="main-section container-fluid no-padding">
-			<section class="portfolio-section" id="portfolio">
-				<div class="container-fluid no-padding">
-					<div class="row">
-						<h2 class="title">web dev port</h2>
+			<div id="portfolio" class="portfolio-section row">
+				<div class="row">
+					<div id="port-box" class="col-md-8 no-padding">
+						<div class="row">
+							
+						</div>
+						<div class="row portfolio no-padding">
+							<h2 class="port-bg-txt-1"> Portfolio </h2>
+							<!-- Portfolio injected here from js -->
+							<a href="mailto:drew@drewdrewthis.com?subject=Hey, Drew, can you build me something beautiful?">
+								<h2 class="port-bg-txt-2">..want more?</h2>
+							</a>
+						</div>
 					</div>
-					<div class="row portfolio no-padding">
-						<!-- Portfolio injected here from js -->
-					</div>
+					<div id="prog-info-box" class="col-md-4"></div>
 				</div>
-			</section>
-			<section class="container-fluid info-section">
+				
+			</div>
+			<section id="about" class="container-fluid info-section">
 				<div class="container">
 					<div class="row">
 						<ul class="social-links">
 							<li><a href="http://twitter.com/drew_drew_this" target="_blank"><i class="fa fa-twitter"></i></a></li>
 							<li><a href="https://github.com/drewdrewthis" target="_blank"><i class="fa fa-github"></i></a></li>
-							<li><a href="http://codepen.io/drewdrewthis/"><i class="fa fa-codepen" target="_blank"></i></a></li>
+							<li><a href="http://codepen.io/drewdrewthis/" target="_blank"><i class="fa fa-codepen"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/andrewgardejoia" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
 					</div>
 					<div class="row main-content">
-						<h2 class="title">Drew is a Front End Web Developer.</h2>
-						<p class="info">But.. I'm just not sure what else 	to say about that.</p>
+						<h2 class="title">Drew is a Front End Web Developer</h2>
+						
+						<div>
+							<span class="devicons devicons-git"></span>
+							<span class="devicons devicons-php"></span>
+							<span class="devicons devicons-css3_full"></span>
+							<span class="devicons devicons-html5"></span>
+							<span class="devicons devicons-angular"></span>
+							<span class="devicons devicons-javascript_badge"></span>
+							<span class="devicons devicons-jquery"></span>
+							<span class="devicons devicons-jquery_ui"></span>		
+							<span class="devicons devicons-less"></span>
+							<span class="devicons devicons-photoshop"></span>
+							<span class="devicons devicons-illustrator"></span>
+							<span class="devicons devicons-wordpress"></span>
+							<span class="devicons devicons-responsive"></span>
+							<span class="devicons devicons-sublime"></span>
+							<span class="devicons devicons-atom"></span>
+						</div>
+						<p></p>
+						<p class="info">And is now taking on new projects.</p>
+						<a href="mailto:drew@drewdrewthis.com?subject=Hi, Drew! Great site."><span class="reach-out">Reach<br>Out</span></a>
 					</div>
-					<div class="row"><a href="http://drewdrewthis.com" target="_blank"><button class="btn">drewdrewthis.com</button></a></div>
+					<div class="row">
+
+					</div>
+					<div class="row">
+						<a href="http://drewdrewthis.com" target="_blank"><button class="btn ddt-button">drewdrewthis.com</button></a>
+					</div>
 
 					<div class="site-info">&copy; Andrew Garde Joia 2015</div>
 				</div>
 			</section>
 		</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+	<!-- Bootstrap CDN -->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 	</body>
 </html>
 <!-- Modals -->
