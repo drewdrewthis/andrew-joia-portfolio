@@ -2,13 +2,6 @@ $(function(){
 	
 	var portfolio = [
 		{ 
-			caption: "New York Times Hack",
-			url: "",
-			alt: "NYT Screenshot",
-			data_target: "#NYTScreenshot",
-			img: "./images/nyt-screenshot.jpg"
-		},
-		{ 
 			caption: "About Me Page",
 			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
 			alt: "About Me",
@@ -128,8 +121,10 @@ $(function(){
 		if($('.disco-mode input[type="checkbox"]').prop("checked")) {
 			changeColor();
 			$('.disco-ball').show();	
+			$('.lead-in h1').text("the meaning of life is to disco.");
 		}
 		else {
+			$('.lead-in h1').text("the meaning of life is to create.");
 			$('.intro-section').css({"background-color": "white" });
 			$('.disco-ball').hide();	
 		}
