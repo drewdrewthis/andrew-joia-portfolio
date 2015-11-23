@@ -210,6 +210,10 @@ html h2 {
   position: absolute;
   margin-top: 0;
 }
+.portfolio-section .port-item .fig-caption .fig-tech {
+  font-size: 0;
+  opacity: .8;
+}
 .portfolio-section .port-item:hover {
   -webkit-box-shadow: inset 0 0 5rem black;
   -moz-box-shadow: inset 0 0 5rem black;
@@ -220,6 +224,9 @@ html h2 {
   padding: 2rem;
   font-size: 2rem;
   width: 100%;
+}
+.portfolio-section .port-item:hover .fig-caption .fig-tech {
+  font-size: 1rem;
 }
 .portfolio-section .port-item:focus {
   outline: none;
