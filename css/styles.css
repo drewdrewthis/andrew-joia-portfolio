@@ -220,13 +220,13 @@ html h2 {
   box-shadow: inset 0 0 5rem black;
 }
 .portfolio-section .port-item:hover .fig-caption {
-  height: 10rem;
+  height: 12rem;
   padding: 2rem;
   font-size: 2rem;
   width: 100%;
 }
 .portfolio-section .port-item:hover .fig-caption .fig-tech {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .portfolio-section .port-item:focus {
   outline: none;
