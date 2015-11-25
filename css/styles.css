@@ -426,7 +426,8 @@ html h2 {
   .intro-section .container {
     margin-top: 0;
   }
-  .main-section {
+  .main-section,
+  .intro-section {
     border-top: 0;
     border-bottom: 0;
     padding-left: 15rem!important;
