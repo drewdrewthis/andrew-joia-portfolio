@@ -420,9 +420,6 @@ html h2 {
   .disco-mode {
     display: block;
   }
-  section {
-    padding-left: 15rem!important;
-  }
   .container {
     width: 85%;
   }
@@ -432,9 +429,7 @@ html h2 {
   .main-section {
     border-top: 0;
     border-bottom: 0;
-  }
-  .info-section {
-    padding-right: 15rem;
+    padding-left: 15rem!important;
   }
   .top-navigation {
     position: fixed;
