@@ -569,7 +569,10 @@ html {
 }
 
 .triangle-move {
-	right: ~"calc((100% - 24rem) / 2)";
+	right: ~"calc((100% - 10rem) / 2)";
+	.large-screen({
+		right: ~"calc((100% - 24rem) / 2)";
+	});
 	transform: rotate(-90deg);
-	top: 14rem;
+	top: 11rem;
 }

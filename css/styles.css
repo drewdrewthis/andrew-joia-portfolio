@@ -473,7 +473,12 @@ html h2 {
   padding: 0;
 }
 .triangle-move {
-  right: calc((100% - 24rem) / 2);
+  right: calc((100% - 10rem) / 2);
   transform: rotate(-90deg);
-  top: 14rem;
+  top: 11rem;
+}
+@media only screen and (min-width: 1080px) {
+  .triangle-move {
+    right: calc((100% - 24rem) / 2);
+  }
 }
