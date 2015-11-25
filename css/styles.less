@@ -103,7 +103,7 @@ html {
 
 .disco-mode {
 	position: absolute;
-    left: 2rem;
+    left: 3rem;
     z-index: 1000;
     top: 8.8rem;
     opacity: .5;
@@ -460,19 +460,48 @@ html {
 }
 
 @media only screen and (min-width: 1080px) {
+	
+	.intro-section {
+		.container {
+			margin-top: 0;
+		}
+	}
+	
 	.top-navigation {
 		position: fixed;
 		left: 0;
-		z-index: 999;
 		width: 15rem;
 		height: 100%;
+		border-right: 10px double #CB4925;
+		border-bottom: 0;
+		overflow: hidden;
+		padding-top: 20rem;
+
+		ul {
+			padding-left: 0;
+			text-align: right;
+		}
+
+		li {
+			padding-top: 1rem;
+		}
+
+		.container {
+			padding-left: 0;
+			padding-right: .7rem;
+		}
 	}
 
 	section {
 		padding-left: 15rem!important;
 	}
 
-	.row, {
+	.main-section {
+		border-top: 0;
+		border-bottom: 0;
+	}
+
+	.row {
 		margin-right: 0;
 		margin-left: 0;
 	}
@@ -482,7 +511,11 @@ html {
 	}
 
 	#triangle-left {
-		display: block;
+		right: ~"calc(((100% - 1200px) / 2) - 7rem)";
+	}
+
+	.port-bg-txt-1 {
+		color: @my-redorange;
 	}
 }
 
