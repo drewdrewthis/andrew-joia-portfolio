@@ -38,6 +38,7 @@ html h2 {
   background-color: white;
   position: relative;
   transition: none;
+  z-index: -1;
 }
 .intro-section .container {
   height: 46rem;
@@ -46,6 +47,7 @@ html h2 {
   background-size: contain;
   width: 1225px;
   max-width: 100%;
+  z-index: -1;
 }
 .intro-section .lead-in {
   border-top: 1px dashed #9EBAB2;
@@ -59,91 +61,6 @@ html h2 {
 .intro-section .lead-in h3 {
   font-family: 'Quattrocento', serif;
   color: #CB4925;
-}
-.disco-ball {
-  position: absolute;
-  top: 6rem;
-  width: 15%;
-  right: 32%;
-  display: none;
-  opacity: .7;
-}
-.disco-mode {
-  position: absolute;
-  left: 3rem;
-  z-index: 1000;
-  top: 8.8rem;
-  opacity: .5;
-}
-.disco-mode .onoffswitch {
-  position: relative;
-  width: 81px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-.disco-mode .onoffswitch-checkbox {
-  display: none;
-}
-.disco-mode .onoffswitch-label {
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
-  border: 2px solid #999999;
-  border-radius: 100px;
-}
-.disco-mode .onoffswitch-inner {
-  display: block;
-  width: 200%;
-  margin-left: -100%;
-  transition: margin 0.3s ease-in 0s;
-}
-.disco-mode .onoffswitch-inner:before,
-.disco-mode .onoffswitch-inner:after {
-  display: block;
-  float: left;
-  width: 50%;
-  height: 18px;
-  padding: 0;
-  line-height: 18px;
-  font-size: 14px;
-  color: white;
-  font-family: Trebuchet, Arial, sans-serif;
-  font-weight: bold;
-  box-sizing: border-box;
-}
-.disco-mode .onoffswitch-inner:before {
-  content: "DISCO MODE";
-  padding-left: 10px;
-  background-color: #472966;
-  color: #FFFFFF;
-}
-.disco-mode .onoffswitch-inner:after {
-  content: "OFF";
-  padding-right: 10px;
-  background-color: #EEEEEE;
-  color: #999999;
-  text-align: right;
-}
-.disco-mode .onoffswitch-switch {
-  display: block;
-  width: 12px;
-  height: 12px;
-  margin: 4px;
-  background: #FFFFFF;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 59px;
-  border: 2px solid #999999;
-  border-radius: 100px;
-  transition: all 0.3s ease-in 0s;
-}
-.disco-mode .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-  margin-left: 0;
-}
-.disco-mode .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-  right: 0px;
 }
 .main-section {
   background-size: cover;
@@ -185,7 +102,7 @@ html h2 {
   right: 0;
   padding: 0 1rem 0 0;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .portfolio-section .portfolio {
     padding: 4rem;
   }
@@ -231,7 +148,7 @@ html h2 {
 .portfolio-section .port-item:focus {
   outline: none;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .portfolio-section .port-item {
     -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
@@ -358,12 +275,119 @@ html h2 {
   border-right: 100px solid #CB4925;
   border-bottom: 50px solid transparent;
   position: fixed;
-  right: calc((100% - 1200px) / 2);
-  top: 56px;
   transform: scale(0.2);
   display: block;
+  right: 6rem;
+  top: -1rem;
+}
+@media only screen and (min-width: 970px) and (max-width: 1258px) {
+  #triangle-left {
+    right: 6rem;
+    top: 5rem;
+  }
+}
+@media only screen and (min-width: 1258px) and (max-width: 4000px) {
+  #triangle-left {
+    right: calc(((100% - 1200px) / 2) - 7rem);
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 970px) {
+  #triangle-left {
+    display: none;
+  }
+}
+.disco-ball {
+  position: absolute;
+  top: 0;
+  width: 15%;
+  right: 32%;
+  display: none;
+  opacity: .7;
+  z-index: -2;
+}
+.disco-mode {
+  position: absolute;
+  left: 3rem;
+  z-index: 1000;
+  top: 8.8rem;
+  opacity: .5;
+  display: none;
+}
+.disco-mode .onoffswitch {
+  position: relative;
+  width: 81px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.disco-mode .onoffswitch-checkbox {
+  display: none;
+}
+.disco-mode .onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 100px;
+}
+.disco-mode .onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.disco-mode .onoffswitch-inner:before,
+.disco-mode .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 18px;
+  padding: 0;
+  line-height: 18px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.disco-mode .onoffswitch-inner:before {
+  content: "DISCO MODE";
+  padding-left: 10px;
+  background-color: #472966;
+  color: #FFFFFF;
+}
+.disco-mode .onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+.disco-mode .onoffswitch-switch {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 59px;
+  border: 2px solid #999999;
+  border-radius: 100px;
+  transition: all 0.3s ease-in 0s;
+}
+.disco-mode .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.disco-mode .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
 }
 @media only screen and (min-width: 970px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .top-navigation {
     position: fixed;
     top: 0;
@@ -371,7 +395,7 @@ html h2 {
     width: 100%;
   }
   .intro-section .container {
-    margin-top: 6rem;
+    margin-top: 7rem;
   }
   .intro-section .lead-in {
     position: absolute;
@@ -391,13 +415,26 @@ html h2 {
     /* Internet Explorer */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   }
-  #triangle-left {
-    display: block;
-  }
 }
 @media only screen and (min-width: 1080px) {
+  .disco-mode {
+    display: block;
+  }
+  section {
+    padding-left: 15rem!important;
+  }
+  .container {
+    width: 85%;
+  }
   .intro-section .container {
     margin-top: 0;
+  }
+  .main-section {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .info-section {
+    padding-right: 15rem;
   }
   .top-navigation {
     position: fixed;
@@ -420,22 +457,8 @@ html h2 {
     padding-left: 0;
     padding-right: .7rem;
   }
-  section {
-    padding-left: 15rem!important;
-  }
-  .main-section {
-    border-top: 0;
-    border-bottom: 0;
-  }
-  .row {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .container {
-    width: 85%;
-  }
   #triangle-left {
-    right: calc(((100% - 1200px) / 2) - 7rem);
+    top: -1rem;
   }
   .port-bg-txt-1 {
     color: #CB4925;

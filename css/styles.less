@@ -16,6 +16,29 @@
 	box-shadow:         @string;
 }
 
+.mobile(@styles) {
+    @media only screen and (max-width: 767px) {
+        @styles();
+    }
+}
+
+.medium-screen(@styles) {
+    @media only screen and (min-width: 970px) {
+        @styles();
+    }
+}
+
+.large-screen(@styles) {
+    @media only screen and (min-width: 1080px) {
+        @styles();
+    }
+}
+
+.responsive(@min, @max, @styles) {
+    @media only screen and (min-width: @min) and (max-width: @max){
+        @styles();
+    }
+}
 
 * {
 	//border: 1px solid green;
@@ -65,6 +88,7 @@ html {
 	background-color: white;
 	position: relative;
 	transition: none;
+	z-index: -1;
 	
 	.container {
 		height: 46rem;
@@ -74,6 +98,7 @@ html {
 		//This makes the container a bit wider so my dread sticks out past the left
 		width: 1225px;
    	 	max-width: 100%;
+   	 	z-index: -1;
 	}
 
 	.lead-in {
@@ -89,72 +114,6 @@ html {
 			font-family: @my-fontfamily-2;
 			color: @my-redorange;
 		}
-	}
-}
-
-.disco-ball {
-	position: absolute;
-    top: 6rem;
-    width: 15%;
-    right: 32%;
-    display: none;
-    opacity: .7;
-}
-
-.disco-mode {
-	position: absolute;
-    left: 3rem;
-    z-index: 1000;
-    top: 8.8rem;
-    opacity: .5;
-    
-	.onoffswitch {
-	    position: relative; width: 81px;
-	    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-	}
-	.onoffswitch-checkbox {
-	    display: none;
-	}
-	.onoffswitch-label {
-	    display: block; overflow: hidden; cursor: pointer;
-	    border: 2px solid #999999; border-radius: 100px;
-	}
-	.onoffswitch-inner {
-	    display: block; width: 200%; margin-left: -100%;
-	    transition: margin 0.3s ease-in 0s;
-	}
-	.onoffswitch-inner:before, .onoffswitch-inner:after {
-	    display: block; float: left; width: 50%; height: 18px; padding: 0; line-height: 18px;
-	    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-	    box-sizing: border-box;
-	}
-	.onoffswitch-inner:before {
-	    content: "DISCO MODE";
-	    padding-left: 10px;
-	    background-color: #472966; color: #FFFFFF;
-	}
-	.onoffswitch-inner:after {
-	    content: "OFF";
-	    padding-right: 10px;
-	    background-color: #EEEEEE; color: #999999;
-	    text-align: right;
-	}
-	.onoffswitch-switch {
-	    display: block;
-	    width: 12px;
-	    height: 12px;
-	    margin: 4px;
-	    background: #FFFFFF;
-	    position: absolute; top: 0; bottom: 0;
-	    right: 59px;
-	    border: 2px solid #999999; border-radius: 100px;
-	    transition: all 0.3s ease-in 0s; 
-	}
-	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-	    margin-left: 0;
-	}
-	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-	    right: 0px; 
 	}
 }
 
@@ -206,9 +165,7 @@ html {
 			padding: 0 1rem 0 0;
 		}
 
-		@media screen and (max-width: 767px) {
-			padding: 4rem;
-		}
+		.mobile({padding: 4rem;})
 	}
 
 	.port-item {
@@ -257,7 +214,7 @@ html {
 			outline: none;
 		}
 
-		@media screen and (max-width: 767px) {
+		.mobile({
 			.box-shadow(0 0 2rem rgba(0,0,0,0.5));
 			margin-bottom: 4rem;
 			border: 1px solid @my-darkgreen;
@@ -269,7 +226,7 @@ html {
 				width: 100%;
 				.box-shadow(0 0 1rem black);
 			}
-		}
+		});
 
 	}
 
@@ -404,15 +361,105 @@ html {
 	// Custom style
 
 	position: fixed;
-    right: ~"calc((100% - 1200px) / 2)";
-    top: 56px;
     transform: scale(0.2);
     display: block;
+
+    right: 6rem;
+    top: -1rem;    
+
+    .responsive(970px, 1258px, {
+    	right: 6rem;
+    	top: 5rem;
+    });
+
+    .responsive(1258px, 4000px, {
+    	right: ~"calc(((100% - 1200px) / 2) - 7rem)";
+    });
+	
+	.responsive(0px, 970px, {
+    	display: none;
+    });
+    
 }
 
-// On-off Switch from https://proto.io/freebies/onoff/
+.disco-ball {
+	position: absolute;
+    top: 0;
+    width: 15%;
+    right: 32%;
+    display: none;
+    opacity: .7;
+    z-index:-2;
+}
 
-@media only screen and (min-width: 970px) {
+.disco-mode {
+	position: absolute;
+    left: 3rem;
+    z-index: 1000;
+    top: 8.8rem;
+    opacity: .5;
+    
+	.onoffswitch {
+	    position: relative; width: 81px;
+	    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	}
+	.onoffswitch-checkbox {
+	    display: none;
+	}
+	.onoffswitch-label {
+	    display: block; overflow: hidden; cursor: pointer;
+	    border: 2px solid #999999; border-radius: 100px;
+	}
+	.onoffswitch-inner {
+	    display: block; width: 200%; margin-left: -100%;
+	    transition: margin 0.3s ease-in 0s;
+	}
+	.onoffswitch-inner:before, .onoffswitch-inner:after {
+	    display: block; float: left; width: 50%; height: 18px; padding: 0; line-height: 18px;
+	    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+	    box-sizing: border-box;
+	}
+	.onoffswitch-inner:before {
+	    content: "DISCO MODE";
+	    padding-left: 10px;
+	    background-color: #472966; color: #FFFFFF;
+	}
+	.onoffswitch-inner:after {
+	    content: "OFF";
+	    padding-right: 10px;
+	    background-color: #EEEEEE; color: #999999;
+	    text-align: right;
+	}
+	.onoffswitch-switch {
+	    display: block;
+	    width: 12px;
+	    height: 12px;
+	    margin: 4px;
+	    background: #FFFFFF;
+	    position: absolute; top: 0; bottom: 0;
+	    right: 59px;
+	    border: 2px solid #999999; border-radius: 100px;
+	    transition: all 0.3s ease-in 0s; 
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	    margin-left: 0;
+	}
+	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	    right: 0px; 
+	}
+
+	display: none;
+}
+
+
+// On-off Switch from https://proto.io/freebies/onoff/
+.medium-screen({
+	
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
 	.top-navigation {
 		position: fixed;
 		top: 0;
@@ -423,7 +470,7 @@ html {
 	.intro-section {
 
 		.container {
-			margin-top: 6rem;
+			margin-top: 7rem;
 		}
 
 		.lead-in {
@@ -453,18 +500,33 @@ html {
 
 		}
 	}
+});
 
-	#triangle-left {
-		display: block;
+.large-screen({
+
+	.disco-mode { display: block;}
+	
+	section {
+		padding-left: 15rem!important;
 	}
-}
 
-@media only screen and (min-width: 1080px) {
+	.container {
+		width: 100%-15rem;
+	}
 	
 	.intro-section {
 		.container {
 			margin-top: 0;
 		}
+	}
+
+	.main-section {
+		border-top: 0;
+		border-bottom: 0;
+	}
+
+	.info-section {
+		padding-right: 15rem;
 	}
 	
 	.top-navigation {
@@ -492,32 +554,14 @@ html {
 		}
 	}
 
-	section {
-		padding-left: 15rem!important;
-	}
-
-	.main-section {
-		border-top: 0;
-		border-bottom: 0;
-	}
-
-	.row {
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	.container {
-		width: 100%-15rem;
-	}
-
 	#triangle-left {
-		right: ~"calc(((100% - 1200px) / 2) - 7rem)";
+		top: -1rem;
 	}
 
 	.port-bg-txt-1 {
 		color: @my-redorange;
 	}
-}
+});
 
 .no-padding {
 	padding: 0;
