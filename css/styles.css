@@ -443,6 +443,9 @@ html h2 {
     border-bottom: 0;
     overflow: hidden;
     padding-top: 20rem;
+    -webkit-box-shadow: 0 0 39px 0px #30140D;
+    -moz-box-shadow: 0 0 39px 0px #30140D;
+    box-shadow: 0 0 39px 0px #30140D;
   }
   .top-navigation ul {
     padding-left: 0;
