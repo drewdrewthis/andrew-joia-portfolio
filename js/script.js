@@ -48,7 +48,7 @@ $(function(){
 		},
 		{
 			title: "New York Times Hack",
-			tech: "Thinkful DOM Manipulation Project",
+			tech: "Thinkful Project: DOM Manipulation Project",
 			url: "",
 			alt: "NYT Screenshot",
 			data_target: "#NYTScreenshot",
@@ -57,7 +57,7 @@ $(function(){
 		},
 		{ 
 			title: "Karma Clone",
-			tech: "Thinkful Clone of Existing Website HTML/CSS",
+			tech: "Thinkful Project: Clone of Existing Website HTML/CSS",
 			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
 			alt: "Karma Clone",
 			data_target: "",

@@ -395,6 +395,28 @@ html h2 {
     display: block;
   }
 }
+@media only screen and (min-width: 1080px) {
+  .top-navigation {
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    width: 15rem;
+    height: 100%;
+  }
+  section {
+    padding-left: 15rem!important;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .container {
+    width: 85%;
+  }
+  #triangle-left {
+    display: block;
+  }
+}
 .no-padding {
   padding: 0;
 }
