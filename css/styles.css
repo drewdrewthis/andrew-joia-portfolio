@@ -14,13 +14,13 @@ html h2 {
   border-bottom: 10px solid #CB4925;
 }
 .top-navigation a {
-  color: #CB4925;
+  color: #735046;
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
 }
 .top-navigation a:hover,
 .top-navigation .active {
-  color: #735046;
+  color: #CB4925;
 }
 .top-navigation li {
   padding-top: 4rem;

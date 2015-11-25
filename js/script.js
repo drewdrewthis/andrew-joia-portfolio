@@ -146,33 +146,47 @@ $(function(){
 
 	});
 
+	function scrollPast(target, element, newClass) {
+		
+		var top = $(target).offset().top,
+			bottom = top + $(target).height();
+		console.log(target);
+		console.debug(top);
+		console.log($(target).height());
+		console.debug(bottom);
+
+		if(top <= $(window).scrollTop() && $(window).scrollTop() <= bottom) {
+		    $(element).addClass(newClass);
+		}
+		else {
+			$(element).removeClass(newClass);
+		}
+	};
+
 	
     $(window).scroll(function() { 
     	clearTimeout( $.data( this, "scrollTimer" ) );
     	$.data(this, 'scrollTimer', setTimeout(function() {
 
     		scrollPast('#about', '#triangle-left', 'triangle-move');
+    		scrollPast(".intro-section", "#home-menu-item a", 'active');
+    		scrollPast("#portfolio", "#portfolio-menu-item a", 'active');
+    		scrollPast("#about", "#about-menu-item a", 'active');
 
-    	}, 250));
+    	}, 1));
     });
 
-    function scrollPast(target, element, newClass) {
-    	
-    	var target = $(target).offset().top;
-    	console.log(target);
-    	console.log($(window).scrollTop());
 
-    	if(target <= $(window).scrollTop()) {
-    	    $(element).addClass(newClass);
-    	}
-    	else {
-    		$(element).removeClass(newClass);
-    	}
-    };
 
 	buildPort();
 	resizeDiv();
 	$.backstretch('./images/city-bg-lq.jpg');
+
+	//Sets initial scroll classes 
+	scrollPast('#about', '#triangle-left', 'triangle-move');
+	scrollPast(".intro-section", "#home-menu-item a", 'active');
+	scrollPast("#portfolio", "#portfolio-menu-item a", 'active');
+	scrollPast("#about", "#about-menu-item a", 'active');
 });
 
 window.onresize = function(event) {
