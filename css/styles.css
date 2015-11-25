@@ -268,7 +268,7 @@ html h2 {
   margin-top: -11px;
   opacity: 1;
 }
-#triangle-left {
+.triangle-left {
   width: 0;
   height: 0;
   border-top: 50px solid transparent;
@@ -281,18 +281,18 @@ html h2 {
   top: -1rem;
 }
 @media only screen and (min-width: 970px) and (max-width: 1258px) {
-  #triangle-left {
+  .triangle-left {
     right: 6rem;
     top: 5rem;
   }
 }
 @media only screen and (min-width: 1258px) and (max-width: 4000px) {
-  #triangle-left {
+  .triangle-left {
     right: calc(((100% - 1200px) / 2) - 7rem);
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 970px) {
-  #triangle-left {
+  .triangle-left {
     display: none;
   }
 }
@@ -453,7 +453,7 @@ html h2 {
     padding-left: 0;
     padding-right: .7rem;
   }
-  #triangle-left {
+  .triangle-left {
     top: -1rem;
   }
   .port-bg-txt-1 {
@@ -462,4 +462,9 @@ html h2 {
 }
 .no-padding {
   padding: 0;
+}
+.triangle-move {
+  right: calc((100% - 24rem) / 2);
+  transform: rotate(-90deg);
+  top: 14rem;
 }

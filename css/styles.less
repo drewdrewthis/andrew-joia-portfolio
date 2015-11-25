@@ -351,7 +351,7 @@ html {
 
 // Shapes
 
-#triangle-left {
+.triangle-left {
 	width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
@@ -547,7 +547,7 @@ html {
 		}
 	}
 
-	#triangle-left {
+	.triangle-left {
 		top: -1rem;
 	}
 
@@ -558,4 +558,10 @@ html {
 
 .no-padding {
 	padding: 0;
+}
+
+.triangle-move {
+	right: ~"calc((100% - 24rem) / 2)";
+	transform: rotate(-90deg);
+	top: 14rem;
 }

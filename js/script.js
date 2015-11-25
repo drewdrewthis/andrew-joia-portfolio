@@ -146,6 +146,30 @@ $(function(){
 
 	});
 
+	
+    $(window).scroll(function() { 
+    	clearTimeout( $.data( this, "scrollTimer" ) );
+    	$.data(this, 'scrollTimer', setTimeout(function() {
+
+    		scrollPast('#about', '#triangle-left', 'triangle-move');
+
+    	}, 250));
+    });
+
+    function scrollPast(target, element, newClass) {
+    	
+    	var target = $(target).offset().top;
+    	console.log(target);
+    	console.log($(window).scrollTop());
+
+    	if(target <= $(window).scrollTop()) {
+    	    $(element).addClass(newClass);
+    	}
+    	else {
+    		$(element).removeClass(newClass);
+    	}
+    };
+
 	buildPort();
 	resizeDiv();
 	$.backstretch('./images/city-bg-lq.jpg');
