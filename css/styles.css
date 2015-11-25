@@ -210,6 +210,8 @@ html h2 {
 }
 .info-section .info {
   color: #F1FFFB;
+  max-width: 100rem;
+  margin: auto;
 }
 .info-section .ddt-button {
   background-color: transparent;
