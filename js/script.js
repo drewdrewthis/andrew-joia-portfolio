@@ -148,7 +148,7 @@ $(function(){
 
 	function scrollPast(target, element, newClass) {
 		
-		var top = $(target).offset().top - 50,
+		var top = $(target).offset().top - 100,
 			bottom = top + $(target).height();
 		console.log(target);
 		console.debug(top);
