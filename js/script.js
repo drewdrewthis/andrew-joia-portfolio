@@ -20,6 +20,15 @@ $(function(){
 			show: true
 		},
 		{ 
+			title: "Tweet Your Reps!",
+			tech: "HTML/CSS/JS, jQuery, Google Civics API, Twitter API, JSON, Design, Illustrator",
+			url: "http://drewdrewthis.github.io/tweet-your-reps",
+			alt: "Tweet Your Reps",
+			data_target: "",
+			img: "./images/tweet-ss.jpg",
+			show: true
+		},
+		{ 
 			title: "Shopping List App",
 			tech: "HTML/CSS/JS, jQuery, Design",
 			url: "http://drewdrewthis.github.io/fewd-shopping-list/",
