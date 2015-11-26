@@ -476,7 +476,7 @@ html h2 {
 .triangle-move {
   right: calc((100% - 10rem) / 2);
   transform: rotate(-90deg);
-  top: 11rem;
+  top: 22rem;
 }
 @media only screen and (min-width: 1080px) {
   .triangle-move {
