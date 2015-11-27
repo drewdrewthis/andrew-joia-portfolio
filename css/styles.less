@@ -210,7 +210,8 @@ html {
 		&:focus {
 			outline: none;
 		}
-
+		
+		// Overrides hover effects for mobile.
 		.mobile({
 			.box-shadow(0 0 2rem rgba(0,0,0,0.5));
 			margin-bottom: 4rem;
@@ -218,18 +219,17 @@ html {
 			
 			.fig-caption  {
 				height: 10rem;
-				padding: 2rem;
+				padding: 2rem 1rem;
 				font-size: 2rem;
 				width: 100%;
 				.box-shadow(0 0 1rem black);
+
+				.fig-tech{
+					font-size: 1.3rem;
+					opacity: .6;
+				};
 			}
-
-			.fig-tech{
-				font-size: 1.5rem;
-				opacity: .8;
-			};
 		});
-
 	}
 
 	.port-image {
@@ -459,8 +459,44 @@ html {
 }
 
 .mobile({
+
+	.top-navigation .container ul {
+	    padding: 0;
+	    text-align: center;
+	}
+
 	.intro-section {
 		z-index: 2;
+
+		.lead-in {
+			h1, h3 {
+		    	font-size: 2rem;
+		    	text-align: center;
+		    }
+		}
+	}
+
+	.info-section .social-links .fa {
+	    font-size: 2.5rem;
+	    height: 5rem;
+	    width: 5rem;
+	    padding: 1.2rem 0 0 0;
+	}
+
+	.info-section .main-content {
+	    padding: 4em 0;
+	}
+
+	.info-section .devicons {
+	    font-size: 3rem;
+	}
+
+	.info-section .reach-out {
+	    width: 100px;
+	    height: 100px;
+	    padding: 1.4rem 0;
+	    font-size: 2.5rem;
+	    line-height: 3.5rem;
 	}
 });
 
