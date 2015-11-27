@@ -78,6 +78,8 @@ html h2 {
 .portfolio-section {
   background: rgba(46, 61, 57, 0.8);
   padding-bottom: 15rem;
+  width: 100%;
+  margin: 0;
 }
 .portfolio-section #proj-info-box {
   background: white;
@@ -389,6 +391,11 @@ html h2 {
 }
 .disco-mode .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
+}
+@media only screen and (max-width: 767px) {
+  .intro-section .container {
+    z-index: 1;
+  }
 }
 @media only screen and (min-width: 970px) {
   .row {

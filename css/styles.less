@@ -125,28 +125,25 @@ html {
 	padding: 0px;
 	position: relative;
 }
-
 .full-width {
 	width: 100%;
 }
 .no-width {
 	width: 0%;
 }
-
 .portfolio-section {
 	background: rgba(46,61,57,0.8);
 	padding-bottom: 15rem;
-
+	width: 100%;
+	margin: 0;
 
 	#proj-info-box {
 		background: white;
 	}
-
 	.row {
 		margin: 0;
 		background: white;
 	}
-
 	.portfolio {
 		width: 100%;
 		margin: auto;
@@ -406,6 +403,8 @@ html {
     z-index: 1000;
     top: 8.8rem;
     opacity: .5;
+
+    // On-off Switch from https://proto.io/freebies/onoff/
     
 	.onoffswitch {
 	    position: relative; width: 81px;
@@ -459,8 +458,15 @@ html {
 	display: none;
 }
 
+.mobile({
+	.intro-section {
+		.container {
+			z-index: 1;
+		}
+	}
+});
 
-// On-off Switch from https://proto.io/freebies/onoff/
+
 .medium-screen({
 	
 	.row {
