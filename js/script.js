@@ -38,6 +38,15 @@ $(function(){
 			show: true
 		},
 		{ 
+			title: "JS Snake Game (WIP)",
+			tech: "HTML5/LESS/JS, jQuery-Mobile, Grunt, Karma-Jasmine",
+			url: "http://drewdrewthis.github.io/snake-game/",
+			alt: "Snake Game",
+			data_target: "",
+			img: "./images/snake-screenshot.png",
+			show: true
+		},
+		{ 
 			title: "YouTube API Project",
 			tech: "HTML/CSS/JS, jQuery, YouTube API",
 			url: "http://drewdrewthis.github.io/Thinkful-Tube-Project/",
