@@ -76,7 +76,7 @@ $(function(){
 		{ 
 			title: "Karma Clone",
 			tech: "Thinkful Project: Clone of Existing Website HTML/CSS",
-			url: "http://codepen.io/drewdrewthis/full/BozPGe/",
+			url: "http://drewdrewthis.github.io/fewd_landing_page_clone",
 			alt: "Karma Clone",
 			data_target: "",
 			img: "./images/shopping-list-screenshot.jpg",
