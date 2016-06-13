@@ -11,6 +11,15 @@ $(function(){
 			show: true
 		},
 		{ 
+			title: "Winegardner & Hammons",
+			tech: "HTML5/CSS3/JS, Wordpress/PHP, jQuery, Gulp, Sass",
+			url: "http://whhotelgroup.com/",
+			alt: "Winegardner & Hammons",
+			data_target: "",
+			img: "./images/whhotels.png",
+			show: true
+		},
+		{ 
 			title: "Who Said? Quiz Game",
 			tech: "HTML/CSS/JS, jQuery, jQuery-UI, JSON, Design",
 			url: "http://drewdrewthis.github.io/fewd-who-said-quiz/",
