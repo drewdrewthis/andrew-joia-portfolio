@@ -20,6 +20,15 @@ $(function(){
 			show: true
 		},
 		{ 
+			title: "CleanHTML Web App",
+			tech: "HTML/CSS/JS, jQuery, Design",
+			url: "http://drewdrewthis.github.io/clean-html/",
+			alt: "CleanHTML Web App",
+			data_target: "",
+			img: "./images/cleanhtml.png",
+			show: true
+		},
+		{ 
 			title: "Who Said? Quiz Game",
 			tech: "HTML/CSS/JS, jQuery, jQuery-UI, JSON, Design",
 			url: "http://drewdrewthis.github.io/fewd-who-said-quiz/",
