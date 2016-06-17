@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 // Set base paths
 
 var paths = {
-        images: './src/assets/images/**/*',
+        images: './src/assets/images/*',
         scripts: 'src/assets/scripts/**/*.js',
         styles: './src/assets/styles/**/*.scss'
     };

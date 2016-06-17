@@ -18,7 +18,7 @@ $(function(){
 			url: "http://whhotelgroup.com/",
 			alt: "Winegardner & Hammons",
 			data_target: "",
-			img: "./dist/images/whhotels.png",
+			img: "./dist/images/whhotels.jpg",
 			show: true
 		},
 		{ 
