@@ -1,0 +1,35 @@
+/* Color Scheme Variables */
+
+$my-darkgreen: #2E3D39;
+$my-lightgreen: #F1FFFB;
+$my-midgreen: #9EBAB2;
+$my-redorange: #CB4925;
+$my-brown: #735046;
+$my-fontfamily-1: 'Oswald', sans-serif;
+$my-fontfamily-2: 'Quattrocento', serif;
+
+/* Mixins */
+
+@mixin mobile {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin medium-screen {
+    @media only screen and (min-width: 970px) {
+        @content;
+    }
+}
+
+@mixin large-screen {
+    @media only screen and (min-width: 1080px) {
+        @content;
+    }
+}
+
+@mixin responsive($min, $max) {
+    @media only screen and (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}

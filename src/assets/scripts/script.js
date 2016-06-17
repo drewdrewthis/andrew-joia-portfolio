@@ -19,7 +19,8 @@ $(function(){
 			alt: "Winegardner & Hammons",
 			data_target: "",
 			img: "./dist/images/whhotels.jpg",
-			show: true
+			show: true,
+			category: 'client-work'
 		},
 		{ 
 			title: "CleanHTML Web App",
@@ -28,6 +29,15 @@ $(function(){
 			alt: "CleanHTML Web App",
 			data_target: "",
 			img: "./dist/images/cleanhtml.png",
+			show: true
+		},
+		{ 
+			title: "JS Snake Game (WIP)",
+			tech: "HTML5/LESS/JS, jQuery-Mobile, Grunt, Karma-Jasmine",
+			url: "http://drewdrewthis.github.io/snake-game/",
+			alt: "Snake Game",
+			data_target: "",
+			img: "./dist/images/snake-screenshot.png",
 			show: true
 		},
 		{ 
@@ -58,15 +68,6 @@ $(function(){
 			show: true
 		},
 		{ 
-			title: "JS Snake Game (WIP)",
-			tech: "HTML5/LESS/JS, jQuery-Mobile, Grunt, Karma-Jasmine",
-			url: "http://drewdrewthis.github.io/snake-game/",
-			alt: "Snake Game",
-			data_target: "",
-			img: "./dist/images/snake-screenshot.png",
-			show: true
-		},
-		{ 
 			title: "YouTube API Project",
 			tech: "HTML/CSS/JS, jQuery, YouTube API",
 			url: "http://drewdrewthis.github.io/Thinkful-Tube-Project/",
@@ -82,7 +83,8 @@ $(function(){
 			alt: "Hot or Cold Game",
 			data_target: "",
 			img: "./dist/images/hot-or-cold-screenshot.jpg",
-			show: true
+			show: true,
+			category: 'fun-work'
 		},
 		{
 			title: "New York Times Hack",
@@ -91,7 +93,7 @@ $(function(){
 			alt: "NYT Screenshot",
 			data_target: "#NYTScreenshot",
 			img: "./dist/images/nyt-screenshot.jpg",
-			show: true
+			show: false
 		},
 		{ 
 			title: "Karma Clone",
@@ -101,7 +103,7 @@ $(function(){
 			data_target: "",
 			img: "./dist/images/shopping-list-screenshot.jpg",
 			img: "./dist/images/karma-clone-screenshot.jpg",
-			show: true
+			show: false
 		},
 		{ 
 			title: "Streetfighter Game",
@@ -110,7 +112,8 @@ $(function(){
 			alt: "Streetfighter Game",
 			data_target: "",
 			img: "./dist/images/streetfighter-screenshot.jpg",
-			show: true
+			show: true,
+			category: 'fun-work'
 		},
 		{ 
 			title: "Shh.. <em>FizzBuzz</em>",
@@ -119,12 +122,18 @@ $(function(){
 			alt: "FizzBuzz",
 			data_target: "#FizzBuzz",
 			img: "./dist/images/fizzbuzz.jpg",
-			show: true
+			show: true,
+			category: 'fun-work'
 		}
 	]
 
 	function buildPort() {
 		$.each(portfolio, function(index, portItem) {
+
+			if(!portItem.show) {
+				return;
+			}
+
 			var html = '<a id="' + portItem.id + 
 				'"class="port-item port-image col-sm-4 col-lg-3 col-xs-12" ' + 
 				'href="' + portItem.url + 
@@ -137,7 +146,19 @@ $(function(){
 					</div>\
 				</a>';
 
-			$('.portfolio').append(html);
+
+			switch (portItem.category) {
+				case 'client-work':
+					$('#client-work').append(html);
+					break;
+				case 'fun-work':
+					$('#fun-work').append(html);
+					break;
+				default:
+					$('#main-port').append(html);
+					break;
+			}
+			
 		});
 	};
 

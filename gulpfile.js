@@ -57,12 +57,7 @@ gulp.task('watch', function() {
 
   gulp.watch(paths.styles, ['styles']);
   gulp.watch(paths.scripts, ['scripts']);
-  gulp.watch(paths.images, ['images']);
-
-  // Watch any files in dist/, reload on change
-  gulp.watch(['css/**','js/**','img/**','*.html']).on('change', function(file) {
-	server.changed(file.path);
-  });
+  //gulp.watch(paths.images, ['images']);
 
 });
 
