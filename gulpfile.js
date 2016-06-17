@@ -5,17 +5,26 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	imagemin = require('gulp-imagemin'),
 	rename = require('gulp-rename'),
-	concat = require('gulp-concat');
+	concat = require('gulp-concat'),
+	del = require('del');
 // var	gulpPath = require('gulp-path');
 // var notify = require('gulp-notify');
 
 // Set base paths
 
 var paths = {
-        images: './src/assets/images/**/*.*',
+        images: './src/assets/images/**/*',
         scripts: 'src/assets/scripts/**/*.js',
         styles: './src/assets/styles/**/*.scss'
     };
+
+gulp.task('clean', function () {
+  return del([
+    'dist/report.csv',
+    // here we use a globbing pattern to match everything inside the `mobile` folder
+    'dist/**/*'
+  ]);
+});
 
 gulp.task('styles', function() {
   return gulp.src('src/assets/styles/**/*.scss')
@@ -38,7 +47,7 @@ gulp.task('scripts', function() {
 // Images
 gulp.task('images', function() {
   return gulp.src(paths.images)
-    //.pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
     .pipe(gulp.dest('dist/images'));
     //.pipe(notify({ message: 'Images task complete' }));
 });
